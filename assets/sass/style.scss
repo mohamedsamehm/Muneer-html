@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/*----------global---------*/
+
+@import "base/variables";
+@import "base/global";
+@import "fonts/ar-fonts";
+@import "base/LTR";
+
+/*-----layout------*/
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/my-styles";
+
+/*-----component------*/
+
+@import "component/hero";
+@import "component/statics";
+@import "component/for-whom";
+@import "component/features";
+@import "component/partners";
+@import "component/sources";
+@import "component/page-title";
+@import "component/options";
+@import "component/advantages";
+@import "component/plans";
+@import "component/contact-us";
+@import "component/faq";
+@import "component/404";
+@import "component/login";

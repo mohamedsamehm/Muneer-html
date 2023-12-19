@@ -1,0 +1,31 @@
+.advantages {
+    ul {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 34px;
+        margin-bottom: 40px;
+        list-style: none;
+        @media (max-width: 991px) {
+            grid-template-columns: 1fr;
+        }
+        li {
+            position: relative;
+            &::before {
+                content: "\f00c";
+                font-family: "FontAwesome";
+                background: #43CE89;
+                border-radius: 50%;
+                color: #fff;
+                font-size: 12px;
+                margin-inline-end: 0;
+                position: absolute;
+                width: 22px;
+                height: 22px;
+                right: -30px;
+                display: flex;
+                align-items: center;
+                top: 3px;
+                justify-content: center;
+            }
+        }
+    }
+}

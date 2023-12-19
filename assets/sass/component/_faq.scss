@@ -1,0 +1,57 @@
+.faq {
+    .faq_inner {
+        max-width: 960px;
+        margin: auto;
+    }
+    .accordion-item {
+        border: 0;
+        border-radius: 12px;
+    }
+    .accordion-button {
+        border-radius: 12px;
+        font-size: 1rem;
+        font-family: 'Rubik', sans-serif;
+        &::after {
+            content: "\f067" !important;
+            font-family: "Font Awesome 5 Pro";
+            background: none !important;
+            color: #6A7188;
+            font-weight: 400;
+            transform: none !important;
+            -webkit-transform: none !important;
+            -moz-transform: none !important;
+            -ms-transform: none !important;
+            -o-transform: none !important;
+            display: flex;
+            align-items: center;
+        }
+    }
+    [aria-expanded="true"] {
+        font-weight: 700;
+    }
+    .accordion-button[aria-expanded="true"]::after {
+        background-image: none;
+        transform: none;
+        transition: all 0.5s ease;
+        content: "\f068" !important;
+        font-family: "Font Awesome 5 Pro";
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        color: #00AAFF;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+    }
+    .more-question {
+        max-width: 400px;
+        margin: auto;
+        h4 {
+            font-size: 18px;
+            font-family: 'Rubik', sans-serif;
+            margin-bottom: 15px;
+        }
+    }
+}

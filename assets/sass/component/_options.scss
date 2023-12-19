@@ -1,0 +1,56 @@
+.options {
+    h6 {
+        color: #66769B;
+        font-size: 1.7rem;
+        font-family: 'Rubik', sans-serif;
+        margin: 0 auto 20px;
+        width: max-content;
+        position: relative;
+        &::after {
+            content: "";
+            width: 20px;
+            height: 1px;
+            background: #66769B;
+            position: absolute;
+            top: 50%;
+            left: -25px;
+        }
+        &::before {
+            content: "";
+            width: 20px;
+            height: 1px;
+            background: #66769B;
+            position: absolute;
+            top: 50%;
+            right: -25px;
+        }
+    }
+    h2 {
+        margin-bottom: 32px;
+        span {
+            font-family: 'Rubik', sans-serif;
+        }
+        @media (max-width: 991px) {
+            font-size: 1.3rem;
+        }
+    }
+    .row {
+        padding: 64px 100px;
+        @media (max-width: 1199px) {
+            padding: 50px 15px;
+        }
+    }
+    .c-card {
+        border-radius: 0;
+        .col-md-6:first-child {
+            @media (max-width: 767px) {
+                order: 2;
+            }
+        }
+    }
+    .image {
+        @media (max-width: 767px) {
+            margin-top: 1.5rem;
+        }
+    }
+}

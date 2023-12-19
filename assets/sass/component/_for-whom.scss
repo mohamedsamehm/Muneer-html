@@ -1,0 +1,44 @@
+.for-whom {
+    .texts {
+        max-width: 700px;
+        margin: auto;
+        text-align: center;
+        .image {
+            margin-bottom: 24px;
+        }
+        h2 {
+            font-size: 1.7143rem;
+            margin-bottom: 24px;
+            @media (max-width: 767px) {
+                font-size: 1.25rem;
+                line-height: normal;
+            }
+        }
+        .h-divider {
+            border-left: 1px solid;
+            height: 62px;
+            width: 1px;
+            margin: 54px auto;
+            text-align: center;
+        }
+    }
+    .content {
+        h4 {
+            margin: 32px 0 24px;
+            font-size: 16px;
+            span {
+                font-family: Rubik;
+                text-transform: uppercase;
+            }
+        }
+        border: 2px solid #D1DBF0;
+        border-radius: 24px;
+        padding: 48px 32px 48px;
+        @media (max-width: 991px) and (min-width: 768px) {
+            padding: 25px 10px 25px
+        }
+        @media (max-width:767px) {
+            padding: 30px;
+        }
+    }
+}

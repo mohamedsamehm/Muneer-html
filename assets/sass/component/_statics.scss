@@ -1,0 +1,78 @@
+.statics-section {
+    .row {
+        --bs-gutter-y: 1.5rem;
+    }
+    .content {
+        border-radius: 24px;
+        background-color: $color-7;
+        padding: 40px 48px;
+        @media (max-width: 991px) and (min-width: 768px) {
+            padding: 20px 10px;
+        }
+        h4 {
+            font-family: Rubik;
+            font-size: 2.2857rem;
+            font-weight: 700;
+            @media (max-width: 767px) {
+                font-size: 2rem;
+            }
+            @media (max-width: 991px) and (min-width: 768px) {
+                font-size: 1.8rem;
+            }
+        }
+        p {
+            margin: 25px 0 0;
+            @media (max-width: 991px) and (min-width: 768px) {
+                margin: 18px 0 0;
+            }
+        }
+        i {
+            color: #006CF2;
+        }
+    }
+    .visit-seconde {
+        position: relative;
+        &::after {
+            content: "";
+            height: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-repeat: no-repeat;
+            background-position: unset;
+            background: linear-gradient(90deg, #026CF2 0%, #7656FB 100%) 0% 0% no-repeat padding-box;
+            z-index: -1;
+            border-radius: 20px;
+        }
+        background-image: url(../images/stat_bg.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 40px;
+        background-position: 15px;
+        color: #fff;
+        @media (max-width: 767px) {
+            padding-bottom: 230px;
+            background-position: bottom;
+            background-size: 410px;
+        }
+        @media (min-width: 768px) and (max-width:1199px) {
+            background-size: 145px;
+            padding: 40px;
+            background-position: bottom left 22px;
+        }
+        .image {
+            width: 130px;
+            flex: none;
+        }
+        .text {
+            max-width: 640px;
+        }
+        .source {
+            font-size: 12px;
+            a {
+                color: #57CEFB;
+            }
+        }
+    }
+}

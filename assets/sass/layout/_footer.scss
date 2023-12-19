@@ -1,0 +1,106 @@
+ footer {
+     color: #D1DBF0;
+     .top-footer {
+         background-color: #031D33;
+         .footer-logo {
+             p {
+                 margin: 32px 0;
+             }
+             i {
+                 border: 1px solid #D1DBF0;
+                 color: #D1DBF0;
+                 width: 32px;
+                 height: 32px;
+                 display: flex;
+                 border-radius: 50%;
+                 align-items: center;
+                 justify-content: center;
+                 transition: all 0.5s ease;
+                 &:hover {
+                     background-color: #D1DBF0;
+                     color: #031D33;
+                 }
+             }
+         }
+         h5 {
+             font-size: 14px;
+             position: relative;
+             padding-bottom: 24px;
+             margin-bottom: 32px;
+             &:after {
+                 content: '';
+                 background: #57CEFB;
+                 width: 24px;
+                 height: 2px;
+                 position: absolute;
+                 bottom: 0;
+                 right: 0;
+             }
+         }
+         ul {
+             li {
+                 font-size: 14px;
+                 display: grid;
+                 gap: 1px;
+                 a {
+                     transition: color 0.4s ease;
+                     color: #D1DBF0;
+                     &:hover {
+                         color: $color-2;
+                     }
+                 }
+             }
+         }
+     }
+     .copyrights {
+         background-color: #0B253B;
+         padding: 32px 0;
+         a {
+             transition: color 0.4s ease;
+             color: #D1DBF0;
+             font-size: 12px;
+             position: relative;
+             &:hover {
+                 color: $color-2;
+             }
+             &:first-child {
+                 padding-inline-end: 24px;
+             }
+             &:first-child:after {
+                 content: '';
+                 position: absolute;
+                 width: 5px;
+                 height: 5px;
+                 border-radius: 50%;
+                 background-color: #D1DBF0;
+                 bottom: 3px;
+                 left: 9px;
+             }
+         }
+     }
+     .col1 {
+         grid-area: col1;
+     }
+     .col2 {
+         grid-area: col2;
+     }
+     .col3 {
+         grid-area: col3;
+     }
+     .col4 {
+         grid-area: col4;
+     }
+     .grid-view {
+         @media (max-width: 767px) {
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+             grid-template-areas: "col1 col4" "col2 col3";
+             row-gap: 30px
+         }
+         .col-6 {
+             @media (max-width: 767px) {
+                 width: 100%;
+             }
+         }
+     }
+ }

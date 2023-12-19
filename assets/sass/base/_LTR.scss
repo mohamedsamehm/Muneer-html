@@ -1,0 +1,87 @@
+[lang="en"] {
+    .fa-arrow-left {
+        transform: scale(-1);
+    }
+    .statics-section .visit-seconde {
+        background-position: center right 15px;
+    }
+    .statics-section .visit-seconde::after {
+        background: linear-gradient(-90deg, #026CF2 0%, #7656FB 100%) 100% 0% no-repeat padding-box;
+    }
+    .statics-section .visit-seconde .source {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+    @media (min-width: 768px) {
+        .features .list .item .more-details::before {
+            left: 0;
+            right: auto;
+            transform: translateY(-50%);
+        }
+    }
+    .fa-chevron-left {
+        transform: translateX(5px) scale(-1) !important
+    }
+    footer .top-footer h5:after {
+        right: auto;
+        left: 0;
+    }
+    .polices {
+        display: flex;
+        justify-content: end;
+    }
+    footer .copyrights a:first-child:after {
+        left: auto;
+        right: 9px;
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+        .statics-section .visit-seconde {
+            background-position: bottom right 22px;
+        }
+    }
+    @media (max-width: 767px) {
+        .statics-section .visit-seconde {
+            background-position: bottom;
+        }
+        .polices {
+            justify-content: center;
+        }
+    }
+    .sources .card-body {
+        background-position: bottom right;
+    }
+    .sources .card-body {
+        background-image: url('../images/card-bg (2).svg');
+    }
+    .dropdown-menu a.dropdown-item:before {
+        left: 0;
+        right: auto;
+        transform: scaleX(-1);
+    }
+    .navbar .dropdown-toggle:after {
+        right: 0;
+        left: auto;
+    }
+    @media (max-width: 991px) {
+        .dropdown-menu a.dropdown-item {
+            padding: 10px 10px 10px 20px;
+        }
+    }
+    .advantages ul li::before {
+        right: auto;
+        left: -30px;
+    }
+    .contact-details p {
+        display: flex;
+        gap: 3px;
+    }
+    .user-email,
+    .user-name,
+    .password {
+        background-position: center left 10px;
+    }
+    label.form-check-label {
+        display: flex;
+    }
+}

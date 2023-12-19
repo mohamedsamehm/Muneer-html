@@ -1,0 +1,147 @@
+.login-section {
+    @media (min-width: 768px) {
+        height: 100vh;
+    }
+    .right {
+        height: 100%;
+        max-width: 600px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 15px;
+        @media (max-width: 767px) {
+            min-height: 100vh;
+        }
+        form {
+            width: 100%;
+            margin-top: 40px;
+            input {
+                padding-inline-start: 40px;
+            }
+        }
+        .forget-password {
+            color: #006CF2;
+            display: block;
+            margin: 10px 0 32px;
+            &:hover {
+                color: $color-1;
+            }
+        }
+        .navbar-brand {
+            margin-bottom: 50px;
+            img {
+                width: 170px;
+            }
+        }
+        h6 {
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+        .btn.btn-primary {
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+        }
+        h5 {
+            font-family: 'Rubik', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        p {
+            text-align: center;
+            margin-top: 34px;
+            font-size: 14px;
+            a {
+                font-weight: 600;
+                text-decoration: underline;
+                &:hover {
+                    color: $color-2;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .left {
+        height: 100%;
+        background-image: url(../images/login-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px 100px;
+        position: relative;
+        display: flex;
+        align-items: end;
+        min-height: 600px;
+        @media (max-width: 767px) {
+            display: none;
+        }
+        @media (min-width: 768px) and (max-width: 1199px) {
+            padding: 10px 30px;
+        }
+        .text {
+            padding: 10px 100px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            @media (min-width: 768px) and (max-width: 1199px) {
+                padding: 10px 30px;
+            }
+        }
+        h3 {
+            font-family: 'Rubik', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 2.25rem;
+            line-height: 3.5rem;
+            @media (min-width: 768px) and (max-width: 1199px) {
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+        }
+        i {
+            border: 1px solid #FFFFFF;
+            color: #FFFFFF;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s ease;
+            &:hover {
+                background-color: #FFFFFF;
+                color: #031D33;
+            }
+        }
+        .social-media {
+            p {
+                font-size: 0.875rem;
+            }
+        }
+    }
+}
+
+.user-name {
+    background-image: url(../images/user.png);
+    background-repeat: no-repeat;
+    background-position: center right 10px;
+}
+
+.password {
+    background-image: url(../images/password.png);
+    background-repeat: no-repeat;
+    background-position: center right 10px;
+}
+
+.user-email {
+    background-image: url(../images/email.png);
+    background-repeat: no-repeat;
+    background-position: center right 10px;
+}
