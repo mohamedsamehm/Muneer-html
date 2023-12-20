@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/sass/style.css">
 
     <title>قائمة الاشتراكات</title>
   </head>
@@ -168,36 +169,41 @@
           class="scan-input-group p-4 bg-white d-flex align-items-center gap-4">
           <div class="input-group" dir="ltr">
             <span class="input-group-text site">www.</span>
-            <input type="text" class="form-control"
-              aria-label="Amount (to the nearest dollar)"
-              placeholder="domain.com">
-            <span class="input-group-text icon"><i class="fa-solid fa-globe"></i></span>
+            <select class="form-control">
+              <option selected value="domain.com">domain.com</option>
+              <option value="domain1.com">domain1.com</option>
+              <option value="domain2.com">domain2.com</option>
+              <option value="domain3.com">domain3.com</option>
+              <option value="domain4.com">domain4.com</option>
+            </select>
+            <span class="input-group-text icon"><img
+                src="assets/images/icons/globe.svg"></span>
           </div>
           <button class="btn btn-primary">إفحص الآن!</button>
         </div>
         <div class="scan-results">
           <div
             class="scan-results-header d-flex justify-content-between align-items-center">
-            <div class="buttons">
+            <div class="buttons" dir="ltr">
               <button
-                class="btn d-inline-flex gap-2 justify-content-center align-items-center">
+                class="btn btn-semidark d-inline-flex gap-2 justify-content-center align-items-center">
+                <img src="assets/images/icons/pdf-file.svg">
                 <span>PDF</span>
-                <i class="fa-regular fa-file-pdf"></i>
               </button>
               <button
-                class="btn d-inline-flex gap-2 justify-content-center align-items-center">
+                class="btn btn-semidark d-inline-flex gap-2 justify-content-center align-items-center">
+                <img src="assets/images/icons/word-file.svg">
                 <span>DOC</span>
-                <i class="fa-regular fa-file-word"></i>
               </button>
               <button
-                class="btn d-inline-flex gap-2 justify-content-center align-items-center">
+                class="btn btn-semidark d-inline-flex gap-2 justify-content-center align-items-center">
+                <img src="assets/images/icons/excel-file.svg">
                 <span>XLS</span>
-                <i class="fa-regular fa-file-excel"></i>
               </button>
             </div>
             <button
               class="btn btn-primary d-inline-flex gap-2 justify-content-center align-items-center">
-              <i class="fa-solid fa-eye"></i>
+              <img src="assets/images/icons/eye-solid.svg">
               <span>معاينة</span>
             </button>
           </div>
@@ -210,21 +216,25 @@
 
             <div class="ratio-boxes">
               <div class="ratio-box prev-examine">
-                <div class="ratio-box-icon"></div>
-                <div class="ratio-box-info">
+                <div class="ratio-box-icon"><img
+                    src="assets/images/icons/diagram-predecessor-solid.svg"></div>
+                <div
+                  class="ratio-box-info">
                   <h4 class="ratio-box-info-title">نسبة توافق الفحص السابق</h4>
                   <div class="ratio-box-info-number">63%</div>
                 </div>
               </div>
               <div class="ratio-box current-examine">
-                <div class="ratio-box-icon"></div>
+                <div class="ratio-box-icon"><img
+                    src="assets/images/icons/diagram-next-solid.svg"></div>
                 <div class="ratio-box-info">
                   <h4 class="ratio-box-info-title">نسبة توافق الفحص الحالي</h4>
                   <div class="ratio-box-info-number">76%</div>
                 </div>
               </div>
               <div class="ratio-box improvement-indicator">
-                <div class="ratio-box-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="ratio-box-icon"><img
+                    src="assets/images/icons/chart-line-solid.svg"></div>
                 <div class="ratio-box-info">
                   <h4 class="ratio-box-info-title">مؤشر التحسين</h4>
                   <div class="ratio-box-info-number">13%</div>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="trash-can-solid" transform="translate(-553 -1180)">
+    <rect id="Rectangle_7682" data-name="Rectangle 7682" width="24" height="24" transform="translate(553 1180)" fill="#07253f" opacity="0"/>
+    <path id="trash-can-solid-2" data-name="trash-can-solid" d="M6.338.83A1.494,1.494,0,0,1,7.678,0h5.644a1.494,1.494,0,0,1,1.341.83L15,1.5h4.5a1.5,1.5,0,0,1,0,3H1.5a1.5,1.5,0,0,1,0-3H6ZM1.5,6h18V21a3,3,0,0,1-3,3H4.5a3,3,0,0,1-3-3ZM6,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,6,9Zm4.5,0a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,10.5,9ZM15,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,15,9Z" transform="translate(554.5 1180)" fill="#07253f"/>
+  </g>
+</svg>

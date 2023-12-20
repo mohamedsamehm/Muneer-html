@@ -664,8 +664,8 @@
 .website-settings-page {
   background-color: #eff2f9;
   padding: 69px 0 80px 0;
-  .subscriptions-list-header {
-    .subscriptions-list-title {
+  .website-settings-header {
+    .website-settings-title {
       h1 {
         font-size: 16px;
         font-family: "Swissra";
@@ -692,8 +692,8 @@
       }
     }
   }
-  .subscriptions-list-body {
-    .subscriptions-list-nav {
+  .website-settings-body {
+    .website-settings-nav {
       .nav-item {
         .nav-link {
           padding: 18px 24px;
@@ -716,14 +716,15 @@
         }
       }
     }
-    .subscriptions-list-content {
+    .website-settings-content {
       flex: 1 1 auto;
-      .subscriptions-list-form {
+      .website-settings-form {
         background: #ffffff;
         border-radius: 16px;
         margin-bottom: 40px;
-        .table-header {
-          padding: 32px 32px 25px 32px;
+        .form-header {
+          padding: 32px 32px 26px 32px;
+          border-bottom: 1px solid #d1dbf0;
           &-title {
             font-family: "Swissra";
             font-size: 16px;
@@ -751,62 +752,27 @@
             }
           }
         }
-        table {
-          th {
-            font-weight: 600 !important;
-            background: #e8edf7;
-            padding: 12px 32px;
-          }
-          td,
-          th {
-            font-size: 14px;
-            line-height: 16px;
-            font-family: "Rubik";
-          }
-          tr {
-            &:not(:last-of-type) {
-              border-bottom: 1px solid #d1dbf0;
-            }
-          }
-          td {
-            color: #07253f;
-            padding: 16px 32px;
-            vertical-align: baseline;
-            &:first-of-type {
-              color: #66769b;
-              font-weight: 600;
+        .form-group {
+          padding: 32px;
+          .form-label {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            .asterisk {
               font-size: 12px;
-            }
-            .subscription-type {
-              border-radius: 16px;
-              display: flex;
-              align-items: center;
-              color: #07253f;
-              padding: 9px 12px 9px 16px;
-              gap: 7px;
-              font-weight: 600;
-              font-size: 12px;
-              width: fit-content;
-              &::before {
-                content: "";
-                width: 6px;
-                height: 6px;
-                border-radius: 50%;
-              }
-              &[data-subscription-type="active"] {
-                background: #bcf7db;
-                &::before {
-                  background: #20cb7c;
-                }
-              }
-              &[data-subscription-type="finished"] {
-                background: #ffdede;
-                &::before {
-                  background: #ed7f77;
-                }
-              }
+              color: #ed7f77;
             }
           }
+        }
+        .form-group-title {
+          background: #e8edf7;
+          font-family: "Rubik";
+          font-size: 14px;
+          color: #07253f;
+          margin: 0;
+          padding: 12px 32px;
+          line-height: 16px;
+          font-weight: 600;
         }
       }
     }
@@ -836,7 +802,7 @@
         background-color: transparent !important;
       }
     }
-    input {
+    select {
       border-color: #d1dbf0;
       background: #ffffff;
       border-right: none;
@@ -900,7 +866,7 @@
         background-color: transparent !important;
       }
     }
-    input {
+    select {
       border-color: #d1dbf0;
       background: #ffffff;
       border-right: none;
@@ -947,15 +913,6 @@
         justify-content: center;
         align-items: center;
         gap: 12px;
-        .btn {
-          background-color: #25415a;
-          border-radius: 8px;
-          color: #fff;
-          padding: 10.5px 16px 10.5px 17px;
-          i {
-            font-size: 27px;
-          }
-        }
       }
     }
     &-report {
@@ -1047,6 +1004,7 @@
         margin-bottom: 24px;
         direction: ltr;
         line-height: 32px;
+        overflow-wrap: break-word;
         span {
           color: #66769b;
         }
@@ -1078,6 +1036,7 @@
           display: flex;
           align-items: center;
           gap: 8px;
+          text-transform: capitalize;
           &::before {
             content: attr(data-count);
             background: #f3c86b;
@@ -1181,7 +1140,8 @@
             margin-bottom: 18px;
             word-wrap: break-word;
           }
-          pre {
+          pre,
+          xmp {
             font-size: 14px;
             font-family: "Rubik";
             color: #07253f;
@@ -1211,24 +1171,27 @@
         }
       }
       .scan-results-report {
-        &-header {
-          padding: 40px 16px;
-          .ratio-boxes {
-            .ratio-box {
-              padding: 16px;
-            }
+        padding: 24px 16px;
+        .ratio-boxes {
+          .ratio-box {
+            padding: 16px;
+          }
+          &::after {
+            width: calc(100% + 132px);
+            position: absolute;
+            left: -16px;
+            right: -16px;
           }
         }
-        &-body {
-          padding: 24px 16px;
-          .scan-types {
-            .scan-type {
-              padding: 8px;
-              &::before {
-                width: 24px;
-                height: 24px;
-                font-size: 10px;
-              }
+        .counts {
+          .count {
+            padding: 4px 8px;
+            font-size: 12px;
+            gap: 4px;
+            &::before {
+              width: 24px;
+              height: 24px;
+              font-size: 10px;
             }
           }
         }

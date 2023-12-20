@@ -132,6 +132,25 @@ $base-url: "/assets/" !default;
   --bs-btn-disabled-border-color: #d1dbf0;
 }
 
+.btn-semidark {
+  --bs-btn-border-radius: 8px;
+  --bs-btn-bg: #25415a;
+  --bs-btn-border-color: #25415a;
+  --bs-btn-color: #fff;
+  --bs-btn-hover-bg: #66769b;
+  --bs-btn-hover-border-color: #66769b;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-focus-shadow-rgb: 66, 70, 73;
+  --bs-btn-active-bg: #66769b;
+  --bs-btn-active-border-color: #66769b;
+  --bs-btn-active-color: #fff;
+  --bs-btn-disabled-bg: #d1dbf0;
+  --bs-btn-disabled-border-color: #d1dbf0;
+  --bs-btn-disabled-color: #66769b;
+  --bs-btn-padding-x: 16px;
+  --bs-btn-padding-y: 10.5px;
+}
+
 .pagination {
   --bs-pagination-padding-x: 0.9rem;
   --bs-pagination-padding-y: 0.5rem;
