@@ -1,6 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24.004" viewBox="0 0 24 24.004">
   <g id="chart.pie.fill" transform="translate(0 0.281)">
-    <rect id="Rectangle_7867" data-name="Rectangle 7867" width="24" height="24.004" transform="translate(0 -0.281)" fill="#07253f" opacity="0"/>
-    <path id="Path_2734" data-name="Path 2734" d="M11.4,22.8a11.335,11.335,0,0,0,7.343-2.718L10.7,12.19a.8.8,0,0,1-.268-.693V.034A11.489,11.489,0,0,0,0,11.4,11.488,11.488,0,0,0,11.4,22.8ZM22.8,11.4a11.341,11.341,0,0,0-1.118-4.865l-9.131,5.256L19.849,19A11.377,11.377,0,0,0,22.8,11.4Zm-10.875-.984,9.019-5.189A11.52,11.52,0,0,0,11.925,0Z" transform="translate(0.6 0.319)" fill="#07253f"/>
+    <rect id="Rectangle_7867" data-name="Rectangle 7867" width="24" height="24.004"
+      transform="translate(0 -0.281)" fill="#ffffff" opacity="0" />
+    <path id="Path_2734" data-name="Path 2734"
+      d="M11.4,22.8a11.335,11.335,0,0,0,7.343-2.718L10.7,12.19a.8.8,0,0,1-.268-.693V.034A11.489,11.489,0,0,0,0,11.4,11.488,11.488,0,0,0,11.4,22.8ZM22.8,11.4a11.341,11.341,0,0,0-1.118-4.865l-9.131,5.256L19.849,19A11.377,11.377,0,0,0,22.8,11.4Zm-10.875-.984,9.019-5.189A11.52,11.52,0,0,0,11.925,0Z"
+      transform="translate(0.6 0.319)" fill="#ffffff" />
   </g>
 </svg>

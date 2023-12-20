@@ -1314,6 +1314,9 @@ footer .col4 {
   transform: scale(1, 1);
   transform-origin: right center;
 }
+.subnav .nav .nav-item img {
+  max-width: 16px;
+}
 .subnav .buttons .btn {
   color: #fff;
   border-radius: 8px;
@@ -1333,6 +1336,9 @@ footer .col4 {
 }
 .subnav .buttons .btn:last-child:hover {
   background-color: #2be58f;
+}
+.subnav .buttons .btn img {
+  max-width: 16px;
 }
 @media (max-width: 575.98px) {
   .subnav .nav {

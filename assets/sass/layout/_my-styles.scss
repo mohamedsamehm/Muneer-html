@@ -142,6 +142,9 @@
           }
         }
       }
+      img {
+        max-width: 16px;
+      }
     }
   }
   .buttons {
@@ -163,6 +166,9 @@
         &:hover {
           background-color: #2be58f;
         }
+      }
+      img {
+        max-width: 16px;
       }
     }
   }
