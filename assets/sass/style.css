@@ -1940,6 +1940,12 @@ footer .col4 {
   border-radius: 8px;
   height: 56px;
   flex: 1 0 128px;
+  max-width: 128px !important;
+}
+@media (max-width: 767.98px) {
+  .new-scan-page .scan-input-group {
+    flex-wrap: wrap;
+  }
 }
 .new-scan-page .scan-no-results {
   display: flex;
