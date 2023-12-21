@@ -1,0 +1,137 @@
+.subscriptions-list-page {
+  padding: 69px 0 80px 0;
+  background-color: #eff2f9;
+  .subscriptions-list-header {
+    .subscriptions-list-title {
+      h1 {
+        font-size: 16px;
+        font-family: "Swissra";
+        color: #07253f;
+        margin-bottom: 0px;
+      }
+    }
+    .breadcrumb {
+      --bs-breadcrumb-divider: "/";
+      .breadcrumb-item {
+        font-family: "Rubik";
+        font-size: 12px;
+        color: #66769b;
+        font-weight: 400;
+        a {
+          color: inherit;
+        }
+        &::before {
+          padding-left: 8px;
+        }
+        &.active {
+          color: #07253f;
+        }
+      }
+    }
+  }
+  .subscriptions-list-body {
+    .subscriptions-list-nav {
+      .nav-item {
+        .nav-link {
+          padding: 18px 24px;
+          border-right: 2px solid #d1dbf0;
+          color: #07253f;
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          transition: all 0.3s ease-in;
+          &.active,
+          &:hover {
+            color: #006cf2 !important;
+            border-color: #006cf2;
+            font-weight: 600;
+          }
+          .icon {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .subscriptions-list-content {
+      flex: 1 1 auto;
+    }
+  }
+
+  .table {
+    background: #ffffff;
+    border-radius: 16px;
+    margin-bottom: 40px;
+    .table-header {
+      padding: 32px 32px 32px 25px;
+      &-title {
+        font-family: "Swissra";
+        font-size: 16px;
+        line-height: 32px;
+        color: #07253f;
+        margin-bottom: 8px;
+      }
+      &-subtitle {
+        font-size: 12px;
+        font-family: "Rubik";
+        color: #07253f;
+      }
+      .btn {
+        --bs-btn-padding-x: 16px;
+        --bs-btn-padding-y: 12px;
+        font-size: 12px;
+        min-height: 40px;
+        font-weight: 600 !important;
+        line-height: 12px !important;
+        i {
+          font-size: 16px !important;
+          line-height: 12px !important;
+        }
+      }
+    }
+
+    table {
+      th {
+        font-weight: 600 !important;
+        background: #e8edf7;
+        padding: 17px 16px;
+      }
+      td,
+      th {
+        font-size: 12px;
+        line-height: 14px;
+        font-family: "Rubik";
+        color: #07253f;
+        min-width: 57px;
+      }
+      td {
+        padding: 28px 16px;
+      }
+      tr {
+        &:not(:last-of-type) {
+          td {
+            border-bottom: 1px solid #d1dbf0;
+          }
+        }
+      }
+      .btn {
+        min-height: 32px !important;
+        line-height: 12px;
+        font-size: 12px;
+        font-weight: 600;
+        .icon {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    .subscriptions-list-body {
+      .subscriptions-list-nav {
+        padding-top: 7px;
+        position: sticky;
+        top: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.website-settings-page {
+  background-color: #eff2f9;
+  padding: 69px 0 80px 0;
+  .website-settings-header {
+    .website-settings-title {
+      h1 {
+        font-size: 16px;
+        font-family: "Swissra";
+        color: #07253f;
+        margin-bottom: 0px;
+      }
+    }
+    .breadcrumb {
+      --bs-breadcrumb-divider: "/";
+      .breadcrumb-item {
+        font-family: "Rubik";
+        font-size: 12px;
+        color: #66769b;
+        font-weight: 400;
+        a {
+          color: inherit;
+        }
+        &::before {
+          padding-left: 8px;
+        }
+        &.active {
+          color: #07253f;
+        }
+      }
+    }
+  }
+  .website-settings-body {
+    .website-settings-nav {
+      .nav-item {
+        .nav-link {
+          padding: 18px 24px;
+          border-right: 2px solid #d1dbf0;
+          color: #07253f;
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          transition: all 0.3s ease-in;
+          &.active,
+          &:hover {
+            color: #006cf2 !important;
+            border-color: #006cf2;
+            font-weight: 600;
+          }
+          .icon {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .website-settings-content {
+      flex: 1 1 auto;
+      .website-settings-form {
+        background: #ffffff;
+        border-radius: 16px;
+        margin-bottom: 40px;
+        .form-header {
+          padding: 32px 32px 26px 32px;
+          border-bottom: 1px solid #d1dbf0;
+          &-title {
+            font-family: "Swissra";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16px;
+            color: #07253f;
+            margin-bottom: 8px;
+          }
+          &-subtitle {
+            font-family: "Rubik";
+            font-size: 12px;
+            font-weight: 400;
+            color: #07253f;
+            margin: 0 !important;
+          }
+          .btn {
+            padding: 13px 16px !important;
+            font-size: 12px;
+            min-height: 40px;
+            font-weight: 600 !important;
+            line-height: 12px !important;
+            i {
+              font-size: 16px !important;
+              line-height: 12px !important;
+            }
+          }
+        }
+        .form-group {
+          padding: 32px;
+          .form-label {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            .asterisk {
+              font-size: 12px;
+              color: #ed7f77;
+            }
+          }
+        }
+        .form-group-title {
+          background: #e8edf7;
+          font-family: "Rubik";
+          font-size: 14px;
+          color: #07253f;
+          margin: 0;
+          padding: 12px 32px;
+          line-height: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

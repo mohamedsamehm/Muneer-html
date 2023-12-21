@@ -1,0 +1,15 @@
+.scan-no-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #d1dbf0;
+  border-radius: 16px;
+  height: 350px;
+  h4 {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Rubik";
+    color: #07253f;
+  }
+}

@@ -1,0 +1,193 @@
+.table {
+  background: #ffffff;
+  border-radius: 16px;
+  &:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
+  & > :not(caption) > * > * {
+    padding: 0 !important;
+  }
+  .table-header {
+    padding: 32px 32px 25px 32px;
+    &-title {
+      font-family: "Swissra";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      color: #07253f;
+      margin-bottom: 0;
+    }
+    &-subtitle {
+      font-family: "Rubik";
+      font-size: 12px;
+      font-weight: 400;
+      color: #07253f;
+      margin: 8px 0 0 0 !important;
+    }
+    .btn {
+      font-size: 12px;
+      min-height: 40px;
+      padding: 13px 16px;
+      font-weight: 600 !important;
+      line-height: 12px !important;
+    }
+  }
+  table {
+    @media (max-width: 992px) {
+      min-width: max-content;
+      td {
+        padding: 16px !important;
+      }
+    }
+    th {
+      font-weight: 600 !important;
+      background: #e8edf7;
+      padding: 17px 8px;
+      // other table
+      // padding: 12px 32px;
+    }
+    td,
+    th {
+      font-size: 12px;
+      line-height: 14px;
+      font-family: "Rubik";
+      color: #07253f;
+      min-width: 57px;
+      // other table
+      // font-size: 14px;
+      // line-height: 16px;
+      // font-family: "Rubik";
+    }
+    tr {
+      &:not(:last-of-type) {
+        border-bottom: 1px solid #d1dbf0;
+      }
+    }
+    td {
+      color: #07253f;
+      padding: 28px 8px;
+      vertical-align: baseline;
+      .btn {
+        font: normal normal 600 12px/24px Rubik;
+        padding: 9px 16px;
+        line-height: 14px;
+        min-height: 32px;
+      }
+      &.td-title {
+        color: #66769b;
+        font-weight: 600;
+        font-size: 12px;
+      }
+      .subscription-type {
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        color: #07253f;
+        padding: 9px 12px 9px 16px;
+        gap: 7px;
+        font-weight: 600;
+        font-size: 12px;
+        width: fit-content;
+        &::before {
+          content: "";
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+        }
+        &[data-subscription-type="active"] {
+          background: #bcf7db;
+          &::before {
+            background: #20cb7c;
+          }
+        }
+        &[data-subscription-type="finished"] {
+          background: #ffdede;
+          &::before {
+            background: #ed7f77;
+          }
+        }
+      }
+      .consumed-pages {
+        width: fit-content;
+        h6 {
+          font-family: "Rubik";
+          font-size: 12px;
+          font-weight: 400;
+          color: #66769b;
+          margin: 0;
+        }
+        span {
+          color: #07253f;
+          font-size: 12px;
+        }
+        .progress {
+          background-color: #eff2f9;
+          width: 128px;
+          .progress-bar {
+            background-color: #20cb7c;
+            &.consumed {
+              background-color: #ed7f77;
+            }
+          }
+        }
+      }
+      .improvement-indicator {
+        border-radius: 23px;
+        padding: 10px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        line-height: 12px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #07253f;
+        width: fit-content;
+        &.up {
+          background: #bcf7db;
+        }
+        &.down {
+          background: #ffdede;
+        }
+      }
+      .download-report-btn-group {
+        .download-report-btn {
+          border-top-left-radius: 0 !important;
+          border-bottom-left-radius: 0 !important;
+        }
+        .dropdown-toggle {
+          border-top-right-radius: 0 !important;
+          border-bottom-right-radius: 0 !important;
+          border-right: 1px solid #0753e2;
+        }
+      }
+      .progress-circle {
+        --progress-color: #20cb7c;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: radial-gradient(
+            closest-side,
+            white 79%,
+            transparent 80% 100%
+          ),
+          conic-gradient(var(--progress-color) var(--progress), #f0f2fa 0);
+        &.full {
+          --progress-color: #f3c86b;
+        }
+        .title {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          font-size: 9px;
+          font-weight: 600;
+          font-family: "Rubik";
+          color: #07253f;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

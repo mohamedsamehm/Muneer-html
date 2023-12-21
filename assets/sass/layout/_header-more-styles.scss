@@ -1,0 +1,105 @@
+.dropdown-menu {
+  margin-top: 12px;
+  &.left {
+    left: 0 !important;
+    right: initial;
+  }
+}
+
+.notifications {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  position: relative;
+  .dropdown-menu {
+    min-width: 250px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 16px #08243f29;
+    border-radius: 8px;
+    .dropdown-item {
+      color: #07253f;
+      height: 48px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 12px;
+      &:hover {
+        background-color: #eff2f9;
+      }
+    }
+  }
+  button {
+    padding: 0 !important;
+    color: $color-1 !important;
+    &::after {
+      content: "";
+      width: 9px;
+      height: 9px;
+      background: #ed7f77 0% 0% no-repeat padding-box;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+      position: absolute;
+      top: -1.5px;
+      right: 0px;
+    }
+  }
+}
+
+.profile-dropdown {
+  background: #eff2f9 0% 0% no-repeat padding-box;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  .dropdown-menu {
+    min-width: 300px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 16px #08243f29;
+    border-radius: 8px;
+    .dropdown-item {
+      color: #07253f;
+      height: 48px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 12px;
+      &:hover {
+        background-color: #eff2f9;
+      }
+      &.dropdowm-item-profile-info {
+        background-color: #eff2f9;
+        height: initial;
+        .avatar-profile-image {
+          background: #fff 0% 0% no-repeat padding-box;
+          width: 56px;
+          height: 56px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+        }
+        .profile-name {
+          font-weight: normal;
+          font-size: 14px;
+          color: #07253f !important;
+        }
+        .profile-email {
+          line-height: initial;
+          font-weight: 400;
+          color: #66769b !important;
+        }
+      }
+      .icon {
+        font-size: 20px;
+        color: #66769b;
+      }
+    }
+    .dropdown-divider {
+      margin: 0;
+      border-top: 1px solid #d1dbf0;
+    }
+  }
+}

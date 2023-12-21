@@ -1,0 +1,48 @@
+.scan-input-group {
+  margin-bottom: 32px;
+  .input-group-text {
+    border-color: #d1dbf0;
+    color: #66769b;
+    padding: 20px 16px;
+    max-height: 56px;
+    &.site {
+      border-radius: 8px 0px 0px 8px !important;
+      border-right: none;
+      font-size: 14px;
+      font-weight: 600;
+      background: #eff2f9;
+    }
+    &.icon {
+      font-size: 20px;
+      border-radius: 0px 8px 8px 0px !important;
+      background-color: transparent !important;
+    }
+  }
+  select {
+    border-color: #d1dbf0;
+    background: #ffffff;
+    border-right: none;
+    border-left: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Rubik";
+    color: #66769b;
+    padding: 12px 16px;
+    height: 56px;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 16px 20px;
+    border-radius: 8px;
+    height: 56px;
+    flex: 1 0 128px;
+    max-width: 128px !important;
+  }
+  @media (max-width: 767.98px) {
+    flex-wrap: wrap;
+  }
+}

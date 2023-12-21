@@ -1,563 +1,593 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" type="image" href="assets/images/logo.svg" />
-  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
-  <link rel="stylesheet" href="assets/css/animate.min.css">
-  <link rel="stylesheet" href="assets/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image" href="assets/images/logo.svg" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-  <title>قائمة الاشتراكات</title>
- </head>
+    <title>قائمة الاشتراكات</title>
+  </head>
 
- <body>
+  <body>
 
-  <header>
-   <nav class="navbar navbar-expand-lg main-nav flex-column">
-    <div class="container">
-     <div class="logo_social">
-      <a class="navbar-brand" href="./index.html">
-       <img width="128" class="img-fluid" src="assets/images/logo.svg"
-        alt>
-      </a>
-     </div>
-     <div class="collapse navbar-collapse " id="navbar-content">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-       <li class="nav-item">
-        <a class="nav-link active" aria-current="page"
-         href="./index.html">
-         <span>الرئيسية</span> </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link" href="./academy.html"> الأسعار </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link" href="./contact-us.html"> اتصل بنا </a>
-       </li>
-      </ul>
-     </div>
+    <header>
+      <nav class="navbar navbar-expand-lg main-nav flex-column">
+        <div class="container">
+          <div class="logo_social">
+            <a class="navbar-brand" href="./index.html">
+              <img width="128" class="img-fluid" src="assets/images/logo.svg"
+                alt>
+            </a>
+          </div>
+          <div class="collapse navbar-collapse " id="navbar-content">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"
+                  href="./index.html">
+                  <span>الرئيسية</span> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./academy.html"> الأسعار </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact-us.html"> اتصل بنا </a>
+              </li>
+            </ul>
+          </div>
 
-     <div class="buttons d-flex gap-3 align-items-center">
+          <div class="buttons d-flex gap-3 align-items-center">
 
-      <div class="dropdown notifications">
-       <button
-        class="btn btn-secondary p-0 bg-transparent border-0 fs-4"
-        type="button"
-        data-bs-toggle="dropdown" aria-expanded="false">
-        <i class="fa-solid fa-bell"></i></button>
-       <ul class="dropdown-menu left p-0">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-       </ul>
-      </div>
-      <div class="dropdown profile-dropdown">
-       <button
-        class="btn btn-secondary p-0 bg-transparent border-0 fs-4"
-        type="button"
-        data-bs-toggle="dropdown" aria-expanded="false">
-        <img class="rounded-circle"
-         src="https://via.placeholder.com/48x48"
-         alt
-         width="48px"
-         height="48px">
-       </button>
-       <div class="dropdown-menu left p-0">
-        <div
-         class="dropdown-item dropdowm-item-profile-info py-3 ps-4">
-         <div class="avatar-profile-image">
-          <img class="rounded-circle" alt="avatar"
-           src="https://via.placeholder.com/48x48">
-         </div>
-         <div class="d-flex flex-column justify-content-center">
-          <h5 class="mb-1 profile-name">سيف الدين بروال</h5>
-          <h6 class="mb-0 profile-email">SeyfDesigner@munner.sa</h6>
-         </div>
+            <div class="dropdown notifications">
+              <button
+                class="btn btn-secondary p-0 bg-transparent border-0 fs-4"
+                type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bell"></i></button>
+              <ul class="dropdown-menu left p-0">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else
+                    here</a></li>
+              </ul>
+            </div>
+            <div class="dropdown profile-dropdown">
+              <button
+                class="btn btn-secondary p-0 bg-transparent border-0 fs-4"
+                type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="rounded-circle"
+                  src="https://via.placeholder.com/48x48"
+                  alt
+                  width="48px"
+                  height="48px">
+              </button>
+              <div class="dropdown-menu left p-0">
+                <div
+                  class="dropdown-item dropdowm-item-profile-info py-3 ps-4">
+                  <div class="avatar-profile-image">
+                    <img class="rounded-circle" alt="avatar"
+                      src="https://via.placeholder.com/48x48">
+                  </div>
+                  <div class="d-flex flex-column justify-content-center">
+                    <h5 class="mb-1 profile-name">سيف الدين بروال</h5>
+                    <h6 class="mb-0 profile-email">SeyfDesigner@munner.sa</h6>
+                  </div>
+                </div>
+                <a href="subscriber-dashboard.html" class="dropdown-item ps-4">
+                  <span class="icon">
+                    <img src="assets/images/icons/square.grid.2x2.svg"
+                      height="20px">
+                  </span> لوحة التحكم
+                </a>
+                <a href="profile.html" class="dropdown-item ps-4">
+                  <span class="icon">
+                    <img src="assets/images/icons/person.svg" height="20px">
+                  </span> الملف الشخصي
+                </a>
+                <a href="my-subscriptions.html" class="dropdown-item ps-4">
+                  <span class="icon">
+                    <img src="assets/images/icons/crown.grey.svg"
+                      height="20px">
+                  </span> اشتراكاتي
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item ps-4">
+                  <span class="icon">
+                    <img
+                      src="assets/images/icons/rectangle.portrait.and.arrow.right.svg"
+                      height="20px">
+                  </span> تسجيل الخروج
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <button class="navbar-toggler collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbar-content">
+            <div class="hamburger-toggle">
+              <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </button>
+
         </div>
-        <a href="#" class="dropdown-item ps-4">
-         <span class="icon">
-          <i class="fa-regular fa-user"></i>
-         </span> لوحة التحكم
-        </a>
-        <a href="#" class="dropdown-item ps-4">
-         <span class="icon">
-          <i class="fa-regular fa-user"></i>
-         </span> الملف الشخصي
-        </a>
-        <a href="#" class="dropdown-item ps-4">
-         <span class="icon">
-          <i class="fa-regular fa-user"></i>
-         </span> اشتراكاتي
-        </a>
-        <div class="dropdown-divider"></div>
-        <a href="#" class="dropdown-item ps-4">
-         <span class="icon">
-          <i class="fa-regular fa-user"></i>
-         </span> تسجيل الخروج
-        </a>
-       </div>
-      </div>
-     </div>
 
-     <button class="navbar-toggler collapsed" type="button"
-      data-bs-toggle="collapse" data-bs-target="#navbar-content">
-      <div class="hamburger-toggle">
-       <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-       </div>
-      </div>
-     </button>
-
-    </div>
-
-   </nav>
-
-  </header>
-  <!-- End header -->
-
-  <!--  -->
-  <nav class="subnav">
-   <div class="container">
-    <div
-     class="d-flex flex-column align-items-center flex-lg-row gap-4 gap-lg-0">
-     <ul class="nav">
-      <li class="nav-item">
-       <a class="nav-link" aria-current="page" href="general-data.html">بيانات
-        عامة</a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link active" aria-current="page"
-        href="subscriptions-list.html">قائمة الاشتراكات</a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" aria-current="page" href="#">قائمة عمليات
-        الفحص</a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" aria-current="page" href="#">اشتراكاتي</a>
-      </li>
-     </ul>
-     <div
-      class="buttons d-flex justify-content-center align-items-center ms-lg-auto gap-3">
-      <a href="#"
-       class="btn d-inline-flex justify-content-center gap-2">
-       <i class="fa-regular fa-user fs-5"></i>
-       <span>فحص جديد</span>
-      </a>
-      <a href="#"
-       class="btn d-inline-flex justify-content-center gap-2">
-       <i class="fa-regular fa-user fs-5"></i>
-       <span>أضف موقع</span></a>
-     </div>
-    </div>
-   </div>
-  </nav>
-  <!--  -->
-
-  <section class="subscriptions-list-page">
-
-   <div class="container">
-
-    <div class="subscriptions-list-header row g-0 mb-4">
-     <div class="subscriptions-list-title col-lg-3"><h1>أقسام التفاصيل</h1></div>
-     <nav
-      class="subscriptions-list-breadcrumb col-lg-9 order-first order-lg-last mb-4 mb-lg-0"
-      aria-label="breadcrumb">
-      <ol class="breadcrumb">
-       <li class="breadcrumb-item"><a href="#">لوحة التحكم</a></li>
-       <li class="breadcrumb-item"><a href="#">قائمة الاشتراكات</a></li>
-       <li class="breadcrumb-item active" aria-current="page">تفاصيل الموقع</li>
-      </ol>
-     </nav>
-    </div>
-
-    <div class="subscriptions-list-body row align-items-start g-0">
-
-     <ul
-      class="nav subscriptions-list-nav flex-column col-lg-3 mb-5 mb-lg-0">
-
-      <li class="nav-item">
-       <a class="nav-link active" href="#table-subscription">الاشتراك</a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="#table-domains">النطاقات</a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="#table-voice-commands">الأوامر الصوتية</a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="#table-options-settings">الخيارات والإعدادات</a>
-      </li>
-
-     </ul>
-
-     <div class="subscriptions-list-content col-lg-9">
-
-      <div class="subscriptions-list-table table-subscription"
-       id="table-subscription">
-       <div
-        class="table-header d-flex justify-content-between align-items-center">
-        <div>
-         <h2 class="table-header-title mb-2">الاشتراك</h2>
-         <h3 class="table-header-subtitle">جامعة الأميرة نورة بن عبد الرحمن</h3></div>
-        <a href
-         class="btn btn-outline-primary d-inline-flex gap-2 align-items-center round-20 fw-semibold px-3 py-2">
-         <i class="fa-regular fa-arrow-left fs-5"></i>
-         <span> تفاصيل الاشتراك </span>
-        </a>
-       </div>
-       <div class="table-body">
-        <div class="overflow-auto">
-         <table class="w-100">
-          <thead>
-           <tr>
-            <th scope="col">البيانات</th>
-            <th scope="col">الضبط</th>
-           </tr>
-          </thead>
-          <tbody>
-           <tr>
-            <td>العنوان</td>
-            <td>جامعة الأميرة نورة بن عبد الرحمن</td>
-           </tr>
-           <tr>
-            <td>الباقة</td>
-            <td>الباقة الاحترافية (سنوي)</td>
-           </tr>
-           <tr>
-            <td>تاريخ الاشتراك القادم</td>
-            <td>6 جانفي 2024</td>
-           </tr>
-           <tr>
-            <td>حالة الاشتراك</td>
-            <td class="subscription-type"><div class="subscription-type"
-              data-subscription-type="active">نشط</div></td>
-           </tr>
-          </tbody>
-         </table>
+      </nav>
+      <nav class="subnav">
+        <div class="container">
+          <div
+            class="d-flex flex-column align-items-center flex-lg-row gap-4 gap-lg-0">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page"
+                  href="subscriber-dashboard.html">
+                  <img src="assets/images/icons/chart.pie.fill.svg">
+                  <span>بيانات
+                    عامة</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"
+                  href="subscriptions-list.html">
+                  <img src="assets/images/icons/bolt.badge.clock.fill.svg">
+                  <span>قائمة الاشتراكات</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="scan-list.html">
+                  <img
+                    src="assets/images/icons/chart.bar.xaxis.ascending.badge.clock.svg">
+                  <span>قائمة عمليات الفحص</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page"
+                  href="my-subscriptions.html">
+                  <img src="assets/images/icons/crown.fill.svg">
+                  <span>اشتراكاتي</span>
+                </a>
+              </li>
+            </ul>
+            <div
+              class="buttons d-flex justify-content-center align-items-center ms-lg-auto gap-3">
+              <a href="new-scan.html"
+                class="btn d-inline-flex justify-content-center gap-2">
+                <img
+                  src="assets/images/icons/magnifying-glass-chart-solid.svg">
+                <span>فحص جديد</span>
+              </a>
+              <a href="#"
+                class="btn d-inline-flex justify-content-center gap-2">
+                <img src="assets/images/icons/plus.circle.fill.svg">
+                <span>أضف موقع</span></a>
+            </div>
+          </div>
         </div>
-       </div>
-      </div>
+      </nav>
 
-      <div class="subscriptions-list-table table-domains" id="table-domains">
-       <div
-        class="table-header d-flex justify-content-between align-items-center">
-        <div>
-         <h2 class="table-header-title mb-2">النطاقات</h2>
-         <h3 class="table-header-subtitle">جامعة الأميرة نورة بن عبد الرحمن</h3></div>
-        <a href
-         class="btn btn-primary d-inline-flex gap-2 align-items-center round-20 fw-semibold px-3 py-2">
-         <i class="fa-solid fa-gear"></i>
-         <span> ضبط الإعدادات </span>
-        </a>
-       </div>
-       <div class="table-body">
-        <div class="overflow-auto">
-         <table class="w-100">
-          <thead>
-           <tr>
-            <th scope="col">البيانات</th>
-            <th scope="col">الضبط</th>
-           </tr>
-          </thead>
-          <tbody>
-           <tr>
-            <td>اسم الهيئة</td>
-            <td>جامعة الأميرة نورة بن عبد الرحمن</td>
-           </tr>
-           <tr>
-            <td>الاشتراك</td>
-            <td>جامعة الأميرة نورة بن عبد الرحمن</td>
-           </tr>
-           <tr>
-            <td>اسم النطاق</td>
-            <td>https:mormorah.gov.sa/ar</td>
-           </tr>
-           <tr>
-            <td>النطاقات المسموحة</td>
-            <td>
-             <p class="m-0">https:mormorah.gov.sa/ar</p>
-             <p class="m-0">https://www.google.com/search?q=information</p>
-             <p class="m-0">https:mormorah.gov.sa/ar</p>
-             <p class="m-0">https://www.google.com/search</p>
-            </td>
-           </tr>
-          </tbody>
-         </table>
+    </header>
+    <!-- End header -->
+
+    <section class="subscriptions-list-page logged-in">
+      <div class="container">
+
+        <div class="table">
+          <div
+            class="table-header d-flex justify-content-between align-items-center px-4 pb-4">
+            <h2 class="table-header-title">قائمة الاشتراكات</h2>
+            <button
+              class="btn btn-dark d-inline-flex align-items-center round-20 px-4">ابحث
+              الآن</button>
+          </div>
+          <div class="table-body">
+            <div class="overflow-auto">
+              <table class="w-100">
+                <thead>
+                  <tr>
+                    <th scope="col" class="text-center">#</th>
+                    <th scope="col">العنوان</th>
+                    <th scope="col">الباقة</th>
+                    <th scope="col">الاشتراك القادم</th>
+                    <th scope="col">متبقي للباقة</th>
+                    <th scope="col">حالة الاشتراك</th>
+                    <th scope="col">الصفحات المستهلكة</th>
+                    <th scope="col">الفحص الشهري</th>
+                    <th scope="col">الإجراءات</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center">1</td>
+                    <td>جامعة الأميرة نورة بنت عبد الرحمن</td>
+                    <td>الباقة الاحترافية (سنوي)</td>
+                    <td>2 أكتوبر 2024</td>
+                    <td>256 يوم</td>
+                    <td><div class="subscription-type"
+                        data-subscription-type="active">نشط</div></td>
+                    <td>
+                      <div class="consumed-pages">
+                        <div
+                          class="d-flex align-items-center justify-content-between mb-1">
+                          <h6>400k / 275653</h6>
+                          <span class="fw-semibold">75%</span>
+                        </div>
+                        <div class="progress" role="progressbar"
+                          aria-valuenow="75"
+                          aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar rounded-3"
+                            style="width: 75%"></div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress-circle" role="progressbar"
+                        aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="10"
+                        style="--progress: 60%"><h6
+                          class="title">10/6</h6></div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <button
+                          class="btn btn-primary rounded-4 px-3">التفاصيل</button>
+                        <button
+                          class="btn btn-outline-semidark rounded-4 d-flex justify-content-center align-items-center gap-1"><span
+                            class="icon"><i
+                              class="fa-solid fa-gear"></i></span><span>إعدادات</span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">2</td>
+                    <td>شركة التقنيات المشتركة SharedTech</td>
+                    <td>الباقة الاحترافية (سنوي)</td>
+                    <td>6 جانفي 2024</td>
+                    <td>136 يوم</td>
+                    <td class="subscription-type"><div
+                        class="subscription-type"
+                        data-subscription-type="finished">منتهي</div></td>
+                    <td>
+                      <div class="consumed-pages">
+                        <div
+                          class="d-flex align-items-center justify-content-between mb-1">
+                          <h6>400k / 400000</h6>
+                          <span class="fw-semibold">100%</span>
+                        </div>
+                        <div class="progress" role="progressbar"
+                          aria-valuenow="100"
+                          aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar rounded-3 consumed"
+                            style="width: 100%"></div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress-circle" role="progressbar"
+                        aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="10"
+                        style="--progress: 80%"><h6
+                          class="title">10/8</h6></div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <button
+                          class="btn btn-primary rounded-4 px-3">التفاصيل</button>
+                        <button
+                          class="btn btn-renewal d-inline-flex gap-2 align-items-center rounded-4">
+                          <img src="assets/images/icons/crown.fill.svg"
+                            height="12.2px">
+                          <span> تجديد </span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">3</td>
+                    <td>مركز الملك سلمان لأبحاث الإعاقة</td>
+                    <td>الباقة الاحترافية (سنوي)</td>
+                    <td>26 أكتوبر 2024</td>
+                    <td>0 يوم</td>
+                    <td><div class="subscription-type"
+                        data-subscription-type="active">نشط</div></td>
+                    <td>
+                      <div class="consumed-pages">
+                        <div
+                          class="d-flex align-items-center justify-content-between mb-1">
+                          <h6>50k / 18349</h6>
+                          <span class="fw-semibold">39%</span>
+                        </div>
+                        <div class="progress" role="progressbar"
+                          aria-valuenow="39"
+                          aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar rounded-3"
+                            style="width: 39%"></div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress-circle full" role="progressbar"
+                        aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="10"
+                        style="--progress: 100%"><h6
+                          class="title">10/10</h6></div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <button
+                          class="btn btn-primary px-3 rounded-4">التفاصيل</button>
+                        <button
+                          class="btn btn-outline-semidark rounded-4 d-flex justify-content-center align-items-center gap-1"><span
+                            class="icon"><i
+                              class="fa-solid fa-gear"></i></span><span>إعدادات</span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">2</td>
+                    <td>شركة التقنيات المشتركة SharedTech</td>
+                    <td>الباقة الاحترافية (سنوي)</td>
+                    <td>6 جانفي 2024</td>
+                    <td>136 يوم</td>
+                    <td class="subscription-type"><div
+                        class="subscription-type"
+                        data-subscription-type="finished">منتهي</div></td>
+                    <td>
+                      <div class="consumed-pages">
+                        <div
+                          class="d-flex align-items-center justify-content-between mb-1">
+                          <h6>400k / 400000</h6>
+                          <span class="fw-semibold">100%</span>
+                        </div>
+                        <div class="progress" role="progressbar"
+                          aria-valuenow="100"
+                          aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar rounded-3 consumed"
+                            style="width: 100%"></div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress-circle" role="progressbar"
+                        aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="10"
+                        style="--progress: 80%"><h6
+                          class="title">10/8</h6></div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <button
+                          class="btn btn-primary rounded-4 px-3">التفاصيل</button>
+                        <button
+                          class="btn btn-renewal d-inline-flex gap-2 align-items-center rounded-4">
+                          <img src="assets/images/icons/crown.fill.svg"
+                            height="12.2px">
+                          <span> تجديد </span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">3</td>
+                    <td>مركز الملك سلمان لأبحاث الإعاقة</td>
+                    <td>الباقة الاحترافية (سنوي)</td>
+                    <td>26 أكتوبر 2024</td>
+                    <td>0 يوم</td>
+                    <td><div class="subscription-type"
+                        data-subscription-type="active">نشط</div></td>
+                    <td>
+                      <div class="consumed-pages">
+                        <div
+                          class="d-flex align-items-center justify-content-between mb-1">
+                          <h6>50k / 18349</h6>
+                          <span class="fw-semibold">39%</span>
+                        </div>
+                        <div class="progress" role="progressbar"
+                          aria-valuenow="39"
+                          aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar rounded-3"
+                            style="width: 39%"></div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress-circle full" role="progressbar"
+                        aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="10"
+                        style="--progress: 100%"><h6
+                          class="title">10/10</h6></div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <button
+                          class="btn btn-primary px-3 rounded-4">التفاصيل</button>
+                        <button
+                          class="btn btn-outline-semidark rounded-4 d-flex justify-content-center align-items-center gap-1"><span
+                            class="icon"><i
+                              class="fa-solid fa-gear"></i></span><span>إعدادات</span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">2</td>
+                    <td>شركة التقنيات المشتركة SharedTech</td>
+                    <td>الباقة الاحترافية (سنوي)</td>
+                    <td>6 جانفي 2024</td>
+                    <td>136 يوم</td>
+                    <td class="subscription-type"><div
+                        class="subscription-type"
+                        data-subscription-type="finished">منتهي</div></td>
+                    <td>
+                      <div class="consumed-pages">
+                        <div
+                          class="d-flex align-items-center justify-content-between mb-1">
+                          <h6>400k / 400000</h6>
+                          <span class="fw-semibold">100%</span>
+                        </div>
+                        <div class="progress" role="progressbar"
+                          aria-valuenow="100"
+                          aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar rounded-3 consumed"
+                            style="width: 100%"></div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress-circle" role="progressbar"
+                        aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="10"
+                        style="--progress: 80%"><h6
+                          class="title">10/8</h6></div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <button
+                          class="btn btn-primary rounded-4 px-3">التفاصيل</button>
+                        <button
+                          class="btn btn-renewal d-inline-flex gap-2 align-items-center rounded-4">
+                          <img src="assets/images/icons/crown.fill.svg"
+                            height="12.2px">
+                          <span> تجديد </span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">3</td>
+                    <td>مركز الملك سلمان لأبحاث الإعاقة</td>
+                    <td>الباقة الاحترافية (سنوي)</td>
+                    <td>26 أكتوبر 2024</td>
+                    <td>0 يوم</td>
+                    <td><div class="subscription-type"
+                        data-subscription-type="active">نشط</div></td>
+                    <td>
+                      <div class="consumed-pages">
+                        <div
+                          class="d-flex align-items-center justify-content-between mb-1">
+                          <h6>50k / 18349</h6>
+                          <span class="fw-semibold">39%</span>
+                        </div>
+                        <div class="progress" role="progressbar"
+                          aria-valuenow="39"
+                          aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar rounded-3"
+                            style="width: 39%"></div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress-circle full" role="progressbar"
+                        aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="10"
+                        style="--progress: 100%"><h6
+                          class="title">10/10</h6></div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <button
+                          class="btn btn-primary px-3 rounded-4">التفاصيل</button>
+                        <button
+                          class="btn btn-outline-semidark rounded-4 d-flex justify-content-center align-items-center gap-1"><span
+                            class="icon"><i
+                              class="fa-solid fa-gear"></i></span><span>إعدادات</span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">2</td>
+                    <td>شركة التقنيات المشتركة SharedTech</td>
+                    <td>الباقة الاحترافية (سنوي)</td>
+                    <td>6 جانفي 2024</td>
+                    <td>136 يوم</td>
+                    <td class="subscription-type"><div
+                        class="subscription-type"
+                        data-subscription-type="finished">منتهي</div></td>
+                    <td>
+                      <div class="consumed-pages">
+                        <div
+                          class="d-flex align-items-center justify-content-between mb-1">
+                          <h6>400k / 400000</h6>
+                          <span class="fw-semibold">100%</span>
+                        </div>
+                        <div class="progress" role="progressbar"
+                          aria-valuenow="100"
+                          aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar rounded-3 consumed"
+                            style="width: 100%"></div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress-circle" role="progressbar"
+                        aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="10"
+                        style="--progress: 80%"><h6
+                          class="title">10/8</h6></div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <button
+                          class="btn btn-primary rounded-4 px-3">التفاصيل</button>
+                        <button
+                          class="btn btn-renewal d-inline-flex gap-2 align-items-center rounded-4">
+                          <img src="assets/images/icons/crown.fill.svg"
+                            height="12.2px">
+                          <span> تجديد </span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
-       </div>
-      </div>
 
-      <div class="subscriptions-list-table table-voice-commands"
-       id="table-voice-commands">
-       <div
-        class="table-header d-flex justify-content-between align-items-center">
-        <div>
-         <h2 class="table-header-title mb-2">الأوامر الصوتية</h2>
-         <h3 class="table-header-subtitle">جامعة الأميرة نورة بن عبد الرحمن</h3></div>
-        <a href
-         class="btn btn-primary d-inline-flex gap-2 align-items-center round-20 fw-semibold px-3 py-2">
-         <i class="fa-solid fa-gear"></i>
-         <span> ضبط الإعدادات </span>
-        </a>
-       </div>
-       <div class="table-body">
-        <div class="overflow-auto">
-         <table class="w-100">
-          <thead>
-           <tr>
-            <th scope="col">الرابط</th>
-            <th scope="col">اللغة</th>
-            <th scope="col">نص الأمر الصوتي</th>
-           </tr>
-          </thead>
-          <tbody>
-           <tr>
-            <td>https://www.google.com/search?q=information</td>
-            <td>عربي</td>
-            <td>التدريب</td>
-           </tr>
-           <tr>
-            <td>https://www.google.com/search</td>
-            <td>عربي</td>
-            <td>البرامج التدريبية</td>
-           </tr>
-           <tr>
-            <td>https://www.google.com/search?q=information</td>
-            <td>عربي</td>
-            <td>الخدمات الإلكترونية</td>
-           </tr>
-           <tr>
-            <td>https://www.google.com/search</td>
-            <td>عربي</td>
-            <td>التوظيف</td>
-           </tr>
-          </tbody>
-         </table>
+      </div>
+    </section>
+
+    <footer>
+      <div class="copyrights">
+        <div class="container">
+          <div class="row text-center text-md-start">
+            <div class="col-md-6">
+              <p class="m-0">© جميع الحقوق محفوظة لمنير 2023</p>
+            </div>
+            <div class="col-md-6">
+              <div class="polices  text-md-end">
+                <a href>الشروط والأحكام</a>
+                <a href>سياسة الخصوصية</a>
+              </div>
+            </div>
+          </div>
         </div>
-       </div>
       </div>
+    </footer>
 
-      <div class="subscriptions-list-table table-options-settings"
-       id="table-options-settings">
-       <div
-        class="table-header d-flex justify-content-between align-items-center">
-        <div>
-         <h2 class="table-header-title mb-2">الخيارات والإعدادات</h2>
-         <h3 class="table-header-subtitle">جامعة الأميرة نورة بن عبد الرحمن</h3></div>
-        <a href
-         class="btn btn-primary d-inline-flex gap-2 align-items-center round-20 fw-semibold px-3 py-2">
-         <i class="fa-solid fa-gear"></i>
-         <span> ضبط الإعدادات </span>
-        </a>
-       </div>
-       <div class="table-body">
-        <div class="overflow-auto">
-         <table class="w-100">
-          <thead>
-           <tr>
-            <th scope="col">البيانات</th>
-            <th scope="col">الضبط</th>
-           </tr>
-          </thead>
-          <tbody>
-           <tr>
-            <td>اللغة المدعومة</td>
-            <td>عربي، إنجليزي</td>
-           </tr>
-           <tr>
-            <td>القالب</td>
-            <td>جانبا</td>
-           </tr>
-           <tr>
-            <td>محاذاة الشريط الجانبي</td>
-            <td>يسار</td>
-           </tr>
-          </tbody>
-          <thead>
-           <tr>
-            <th scope="col">إعدادات النافذة المنبثقة</th>
-            <th scope="col">الضبط</th>
-           </tr>
-          </thead>
-          <tbody>
-           <tr>
-            <td>حركات النافذة المنبثقة</td>
-            <td>تلاشي</td>
-           </tr>
-           <tr>
-            <td>تراكب النافذة المنبثقة</td>
-            <td>مفعل</td>
-           </tr>
-           <tr>
-            <td>تمرير النافذة المنبثقة</td>
-            <td>مفعل</td>
-           </tr>
-           <tr>
-            <td>الإغلاق في أي مكان</td>
-            <td>مفعل</td>
-           </tr>
-           <tr>
-            <td>زر الإغلاق</td>
-            <td>مفعل</td>
-           </tr>
-           <tr>
-            <td>النافذة المنبثقة قابل للسحب</td>
-            <td>مفعل</td>
-           </tr>
-           <tr>
-            <td>ظل النافذة المنبثقة</td>
-            <td>مفعل</td>
-           </tr>
-           <tr>
-            <td>أدوات النافذة المنبثقة</td>
-            <td>مفعل</td>
-           </tr>
-          </tbody>
-          <thead>
-           <tr>
-            <th scope="col">إعدادات الزر المفتوحة</th>
-            <th scope="col">الضبط</th>
-           </tr>
-          </thead>
-          <tbody>
-           <tr>
-            <td>إظهار الزر المفتوح</td>
-            <td>مفعل</td>
-           </tr>
-           <tr>
-            <td>فهرس جدولة الزر</td>
-            <td>التنقل المتسلسل بلوحة المفاتيح القابل للتركيز (الترتيب المحدد
-             حسب القيمة)</td>
-           </tr>
-           <tr>
-            <td>موضع الزر</td>
-            <td>أسفل، يمين</td>
-           </tr>
-           <tr>
-            <td>تسمية توضيحية للزر</td>
-            <td>لاشيء</td>
-           </tr>
-           <tr>
-            <td>أيقونة الزر</td>
-            <td>لاشيء</td>
-           </tr>
-           <tr>
-            <td>موضع أيقونة الزر</td>
-            <td>قبل</td>
-           </tr>
-           <tr>
-            <td>تأثيرات الإدخال للزر</td>
-            <td>تلاشي</td>
-           </tr>
-           <tr>
-            <td>تأثيرات التمرير للزر</td>
-            <td>لاشيء</td>
-           </tr>
-          </tbody>
-          <thead>
-           <tr>
-            <th scope="col">خيارات التنقل الصوتي</th>
-            <th scope="col">الضبط</th>
-           </tr>
-          </thead>
-          <tbody>
-           <tr>
-            <td>التنقل الصوتي التلقائي</td>
-            <td>مفعل</td>
-           </tr>
-           <tr>
-            <td>إخفاء النافذة المنبثقة تلقائيًا</td>
-            <td>مفعل</td>
-           </tr>
-          </tbody>
-          <thead>
-           <tr>
-            <th scope="col">التحليلات</th>
-            <th scope="col">الضبط</th>
-           </tr>
-          </thead>
-          <tbody>
-           <tr>
-            <td>خيار التحليلات</td>
-            <td>غير مفعل</td>
-           </tr>
-          </tbody>
-         </table>
-        </div>
-       </div>
-      </div>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/wow.min.js "></script>
+    <script src="assets/js/script.js "></script>
 
-     </div>
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer
+      src="//js-eu1.hs-scripts.com/143516126.js"></script>
+    <!-- End of HubSpot Embed Code -->
 
-    </div>
-
-   </div>
-
-  </section>
-
-  <footer>
-   <div class="copyrights">
-    <div class="container">
-     <div class="row text-center text-md-start">
-      <div class="col-md-6">
-       <p class="m-0">© جميع الحقوق محفوظة لمنير 2023</p>
-      </div>
-      <div class="col-md-6">
-       <div class="polices  text-md-end">
-        <a href>الشروط والأحكام</a>
-        <a href>سياسة الخصوصية</a>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
-  </footer>
-
-  <!-- Modal -->
-  <div class="modal fade" id="meeting" tabindex="-1"
-   aria-labelledby="meetingLabel" aria-hidden="true">
-   <button type="button" class="btn-close" data-bs-dismiss="modal"
-    aria-label="Close">
-
-    <i class="fa-regular fa-xmark"></i>
-
-   </button>
-
-   <div class="modal-dialog">
-    <div class="modal-content">
-
-     <div class="modal-body">
-      <!-- Start of Meetings Embed Script -->
-      <div class="meetings-iframe-container"
-       data-src="https://meetings-eu1.hubspot.com/medhat-ramadan/muneers-website-meeting-link?embed=true"></div>
-      <script type="text/javascript"
-       src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
-      <!-- End of Meetings Embed Script -->
-     </div>
-
-    </div>
-   </div>
-  </div>
-
-  <script src="assets/js/jquery-3.5.1.min.js"></script>
-  <script src="assets/js/swiper-bundle.min.js"></script>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/wow.min.js "></script>
-  <script src="assets/js/script.js "></script>
-
-  <!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer
-   src="//js-eu1.hs-scripts.com/143516126.js"></script>
-  <!-- End of HubSpot Embed Code -->
-
- </body>
+  </body>
 
 </html>
