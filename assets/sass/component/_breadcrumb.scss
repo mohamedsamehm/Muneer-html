@@ -1,0 +1,18 @@
+.breadcrumb {
+  --bs-breadcrumb-divider: "/";
+  .breadcrumb-item {
+    font-family: "Rubik";
+    font-size: 12px;
+    color: #66769b;
+    font-weight: 400;
+    a {
+      color: inherit;
+    }
+    &::before {
+      padding-left: 8px;
+    }
+    &.active {
+      color: #07253f;
+    }
+  }
+}

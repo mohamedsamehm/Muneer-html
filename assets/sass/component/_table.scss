@@ -1,14 +1,27 @@
 .table {
   background: #ffffff;
   border-radius: 16px;
+  margin: 0;
   &:not(:last-of-type) {
     margin-bottom: 40px;
   }
   & > :not(caption) > * > * {
-    padding: 0 !important;
+    padding: 0;
   }
   .table-header {
     padding: 32px 32px 25px 32px;
+    input[type="search"],
+    select {
+      min-width: 240px;
+      color: #07253f;
+      padding: 10px 16px;
+      font-size: 12px;
+      border-radius: 20px;
+      min-height: 38px;
+      @media (max-width: 992px) {
+        width: auto;
+      }
+    }
     &-title {
       font-family: "Swissra";
       font-size: 16px;
@@ -32,19 +45,42 @@
       line-height: 12px !important;
     }
   }
+  &.table-head-col {
+    table {
+      th {
+        padding: 12px 32px;
+      }
+      td,
+      th {
+        font-size: 14px;
+        line-height: 16px;
+        max-height: 48px;
+      }
+      td {
+        padding: 16px 32px;
+        &:first-of-type {
+          color: #66769b;
+          font-size: 12px;
+          font-weight: 600;
+        }
+        &.subscription-type-td {
+          padding: 9px 32px !important;
+        }
+      }
+    }
+  }
   table {
     @media (max-width: 992px) {
       min-width: max-content;
-      td {
-        padding: 16px !important;
+      td,
+      th {
+        padding: 16px 24px !important;
       }
     }
     th {
       font-weight: 600 !important;
       background: #e8edf7;
-      padding: 17px 8px;
-      // other table
-      // padding: 12px 32px;
+      padding: 17px 24px;
     }
     td,
     th {
@@ -53,30 +89,23 @@
       font-family: "Rubik";
       color: #07253f;
       min-width: 57px;
-      // other table
-      // font-size: 14px;
-      // line-height: 16px;
-      // font-family: "Rubik";
     }
     tr {
+      border: none;
       &:not(:last-of-type) {
         border-bottom: 1px solid #d1dbf0;
       }
     }
     td {
       color: #07253f;
-      padding: 28px 8px;
+      padding: 28px 24px;
       vertical-align: baseline;
       .btn {
         font: normal normal 600 12px/24px Rubik;
         padding: 9px 16px;
         line-height: 14px;
         min-height: 32px;
-      }
-      &.td-title {
-        color: #66769b;
-        font-weight: 600;
-        font-size: 12px;
+        min-width: fit-content;
       }
       .subscription-type {
         border-radius: 16px;
@@ -186,6 +215,12 @@
           font-family: "Rubik";
           color: #07253f;
           margin: 0;
+        }
+      }
+      .btn-subscription-details {
+        &:not(:hover) {
+          color: #006cf2;
+          border-color: #006cf2;
         }
       }
     }

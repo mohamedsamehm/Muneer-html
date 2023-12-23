@@ -1,0 +1,40 @@
+.sidebar-nav {
+  .nav-item {
+    .nav-link {
+      padding: 18px 24px;
+      border-right: 2px solid #d1dbf0;
+      color: #07253f;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: all 0.2s;
+      &.active,
+      &:hover {
+        color: #006cf2 !important;
+        border-color: #006cf2;
+        font-weight: 600;
+        .icon,
+        svg,
+        svg rect,
+        svg path {
+          fill: #006cf2 !important;
+        }
+      }
+      .icon,
+      svg,
+      svg rect,
+      svg path {
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+        fill: #66759b;
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    padding-top: 7px;
+    position: sticky;
+    top: 20px;
+  }
+}

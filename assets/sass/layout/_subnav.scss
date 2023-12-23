@@ -66,6 +66,16 @@
       }
     }
   }
+  @media (max-width: 767.98px) {
+    .nav {
+      gap: 20px !important;
+      .nav-item {
+        .nav-link {
+          font-size: 14px;
+        }
+      }
+    }
+  }
   @media (max-width: 575.98px) {
     .nav {
       gap: 12px !important;

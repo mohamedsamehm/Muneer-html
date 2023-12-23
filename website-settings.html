@@ -11,9 +11,8 @@
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/sass/style.css">
 
-    <title>قائمة الاشتراكات</title>
+    <title>إعدادات الموقع</title>
   </head>
 
   <body>
@@ -47,15 +46,118 @@
 
             <div class="dropdown notifications">
               <button
-                class="btn btn-secondary p-0 bg-transparent border-0 fs-4"
+                class="btn btn-secondary btn-notifications p-0 bg-transparent border-0 fs-4"
                 type="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-bell"></i></button>
-              <ul class="dropdown-menu left p-0">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+              <div class="dropdown-menu left">
+                <div class="title py-3 px-4 border-bottom">
+                  <h2 class="m-0 color-1 small fw-normal">التنبيهات</h2>
+                </div>
+                <div class="dropdown-item py-3 px-4 not-read">
+                  <div
+                    class="d-flex justify-content-center flex-column gap-12">
+                    <div class="dropdown-item-message">
+                      تم تعيين تسجيل جديد لموقع: <strong>جامعة الأميرة نورة بنت
+                        عبد الرحمن.</strong></div>
+                    <time class="dropdown-item-time lh-base">2023/12/10</time>
+                  </div>
+                  <button class="btn btn-trash ms-auto p-0" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                      height="16" viewBox="0 0 24 24">
+                      <g id="trash-can-solid"
+                        transform="translate(-553 -1180)">
+                        <rect id="Rectangle_7682"
+                          data-name="Rectangle 7682" width="24"
+                          height="24" transform="translate(553 1180)"
+                          fill="#66759b" opacity="0" />
+                        <path id="trash-can-solid-2"
+                          data-name="trash-can-solid"
+                          d="M6.338.83A1.494,1.494,0,0,1,7.678,0h5.644a1.494,1.494,0,0,1,1.341.83L15,1.5h4.5a1.5,1.5,0,0,1,0,3H1.5a1.5,1.5,0,0,1,0-3H6ZM1.5,6h18V21a3,3,0,0,1-3,3H4.5a3,3,0,0,1-3-3ZM6,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,6,9Zm4.5,0a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,10.5,9ZM15,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,15,9Z"
+                          transform="translate(554.5 1180)"
+                          fill="#66759b" />
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+                <div class="dropdown-item py-3 px-4">
+                  <div
+                    class="d-flex justify-content-center flex-column gap-12">
+                    <div class="dropdown-item-message">
+                      تم الفحص بنجاح لموقع: <strong>مركز الملك
+                        سلمان لأبحاث الإعاقة!</strong></div>
+                    <time class="dropdown-item-time lh-base">2023/12/10</time>
+                  </div>
+                  <button class="btn btn-trash ms-auto p-0" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                      height="16" viewBox="0 0 24 24">
+                      <g id="trash-can-solid"
+                        transform="translate(-553 -1180)">
+                        <rect id="Rectangle_7682"
+                          data-name="Rectangle 7682" width="24"
+                          height="24" transform="translate(553 1180)"
+                          fill="#66759b" opacity="0" />
+                        <path id="trash-can-solid-2"
+                          data-name="trash-can-solid"
+                          d="M6.338.83A1.494,1.494,0,0,1,7.678,0h5.644a1.494,1.494,0,0,1,1.341.83L15,1.5h4.5a1.5,1.5,0,0,1,0,3H1.5a1.5,1.5,0,0,1,0-3H6ZM1.5,6h18V21a3,3,0,0,1-3,3H4.5a3,3,0,0,1-3-3ZM6,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,6,9Zm4.5,0a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,10.5,9ZM15,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,15,9Z"
+                          transform="translate(554.5 1180)"
+                          fill="#66759b" />
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+                <div class="dropdown-item py-3 px-4 not-read">
+                  <div
+                    class="d-flex justify-content-center flex-column gap-12">
+                    <div class="dropdown-item-message">
+                      تحديثات جديدة في <strong>شروط الاستخدام.</strong></div>
+                    <time class="dropdown-item-time lh-base">2023/12/10</time>
+                  </div>
+                  <button class="btn btn-trash ms-auto p-0" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                      height="16" viewBox="0 0 24 24">
+                      <g id="trash-can-solid"
+                        transform="translate(-553 -1180)">
+                        <rect id="Rectangle_7682"
+                          data-name="Rectangle 7682" width="24"
+                          height="24" transform="translate(553 1180)"
+                          fill="#66759b" opacity="0" />
+                        <path id="trash-can-solid-2"
+                          data-name="trash-can-solid"
+                          d="M6.338.83A1.494,1.494,0,0,1,7.678,0h5.644a1.494,1.494,0,0,1,1.341.83L15,1.5h4.5a1.5,1.5,0,0,1,0,3H1.5a1.5,1.5,0,0,1,0-3H6ZM1.5,6h18V21a3,3,0,0,1-3,3H4.5a3,3,0,0,1-3-3ZM6,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,6,9Zm4.5,0a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,10.5,9ZM15,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,15,9Z"
+                          transform="translate(554.5 1180)"
+                          fill="#66759b" />
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+                <div class="dropdown-item py-3 px-4 not-read">
+                  <div
+                    class="d-flex justify-content-center flex-column gap-12">
+                    <div class="dropdown-item-message">
+                      تم تعيين تسجيل جديد لموقع: <strong>شركة
+                        التقنيات المشتركة SharedTech.</strong></div>
+                    <time class="dropdown-item-time lh-base">2023/12/10</time>
+                  </div>
+                  <button class="btn btn-trash ms-auto p-0" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                      height="16" viewBox="0 0 24 24">
+                      <g id="trash-can-solid"
+                        transform="translate(-553 -1180)">
+                        <rect id="Rectangle_7682"
+                          data-name="Rectangle 7682" width="24"
+                          height="24" transform="translate(553 1180)"
+                          fill="#66759b" opacity="0" />
+                        <path id="trash-can-solid-2"
+                          data-name="trash-can-solid"
+                          d="M6.338.83A1.494,1.494,0,0,1,7.678,0h5.644a1.494,1.494,0,0,1,1.341.83L15,1.5h4.5a1.5,1.5,0,0,1,0,3H1.5a1.5,1.5,0,0,1,0-3H6ZM1.5,6h18V21a3,3,0,0,1-3,3H4.5a3,3,0,0,1-3-3ZM6,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,6,9Zm4.5,0a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,10.5,9ZM15,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,15,9Z"
+                          transform="translate(554.5 1180)"
+                          fill="#66759b" />
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
             <div class="dropdown profile-dropdown">
               <button
@@ -64,7 +166,6 @@
                 data-bs-toggle="dropdown" aria-expanded="false">
                 <img class="rounded-circle"
                   src="https://via.placeholder.com/48x48"
-                  alt
                   width="48px"
                   height="48px">
               </button>
@@ -80,25 +181,29 @@
                     <h6 class="mb-0 profile-email">SeyfDesigner@munner.sa</h6>
                   </div>
                 </div>
-                <a href="#" class="dropdown-item ps-4">
+                <a href="subscriber-dashboard.html" class="dropdown-item ps-4">
                   <span class="icon">
-                    <i class="fa-regular fa-user"></i>
+                    <img src="assets/images/icons/square.grid.2x2.svg"
+                      height="20px">
                   </span> لوحة التحكم
                 </a>
-                <a href="#" class="dropdown-item ps-4">
+                <a href="profile.html" class="dropdown-item ps-4">
                   <span class="icon">
-                    <i class="fa-regular fa-user"></i>
+                    <img src="assets/images/icons/person.svg" height="20px">
                   </span> الملف الشخصي
                 </a>
-                <a href="#" class="dropdown-item ps-4">
+                <a href="my-subscriptions.html" class="dropdown-item ps-4">
                   <span class="icon">
-                    <i class="fa-regular fa-user"></i>
+                    <img src="assets/images/icons/crown.grey.svg"
+                      height="20px">
                   </span> اشتراكاتي
                 </a>
                 <div class="dropdown-divider"></div>
                 <a href="#" class="dropdown-item ps-4">
                   <span class="icon">
-                    <i class="fa-regular fa-user"></i>
+                    <img
+                      src="assets/images/icons/rectangle.portrait.and.arrow.right.svg"
+                      height="20px">
                   </span> تسجيل الخروج
                 </a>
               </div>
@@ -119,115 +224,165 @@
         </div>
 
       </nav>
+      <nav class="subnav">
+        <div class="container">
+          <div
+            class="d-flex flex-column align-items-center flex-lg-row gap-4 gap-lg-0">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page"
+                  href="subscriber-dashboard.html">
+                  <img src="assets/images/icons/chart.pie.fill.svg">
+                  <span>بيانات
+                    عامة</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"
+                  href="subscriptions-list.html">
+                  <img src="assets/images/icons/bolt.badge.clock.fill.svg">
+                  <span>قائمة الاشتراكات</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="scan-list.html">
+                  <img
+                    src="assets/images/icons/chart.bar.xaxis.ascending.badge.clock.svg">
+                  <span>قائمة عمليات الفحص</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page"
+                  href="my-subscriptions.html">
+                  <img src="assets/images/icons/crown.fill.svg">
+                  <span>اشتراكاتي</span>
+                </a>
+              </li>
+            </ul>
+            <div
+              class="buttons d-flex justify-content-center align-items-center ms-lg-auto gap-3">
+              <a href="new-scan.html"
+                class="btn d-inline-flex justify-content-center gap-2">
+                <img
+                  src="assets/images/icons/magnifying-glass-chart-solid.svg">
+                <span>فحص جديد</span>
+              </a>
+              <a href="#"
+                class="btn d-inline-flex justify-content-center gap-2">
+                <img src="assets/images/icons/plus.circle.fill.svg">
+                <span>أضف موقع</span></a>
+            </div>
+          </div>
+        </div>
+      </nav>
 
     </header>
     <!-- End header -->
 
-    <!--  -->
-    <nav class="subnav">
+    <section class="website-settings-page logged-in">
+
       <div class="container">
-        <div
-          class="d-flex flex-column align-items-center flex-lg-row gap-4 gap-lg-0">
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="general-data.html">بيانات
-                عامة</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page"
-                href="subscriptions-list.html">قائمة الاشتراكات</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">قائمة عمليات
-                الفحص</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">اشتراكاتي</a>
-            </li>
-          </ul>
-          <div
-            class="buttons d-flex justify-content-center align-items-center ms-lg-auto gap-3">
-            <a href="#"
-              class="btn d-inline-flex justify-content-center gap-2">
-              <i class="fa-regular fa-user fs-5"></i>
-              <span>فحص جديد</span>
-            </a>
-            <a href="#"
-              class="btn d-inline-flex justify-content-center gap-2">
-              <i class="fa-regular fa-user fs-5"></i>
-              <span>أضف موقع</span></a>
+
+        <div class="row g-0 mb-4">
+          <div class="col-lg-3">
+            <h1 class="fs-6 m-0 font-familhy-swissra color-1">أقسام
+              الإعدادات</h1>
           </div>
-        </div>
-      </div>
-    </nav>
-    <!--  -->
-
-    <section class="website-settings-page">
-
-      <div class="container">
-
-        <div class="website-settings-header row g-0 mb-4">
-          <div class="website-settings-title col-lg-3"><h1>أقسام الإعدادات</h1></div>
-          <nav
-            class="website-settings-breadcrumb col-lg-9 order-first order-lg-last mb-4 mb-lg-0"
+          <nav class="col-lg-9 order-first order-lg-last mb-4 mb-lg-0"
             aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">لوحة التحكم</a></li>
-              <li class="breadcrumb-item"><a href="#">قائمة الاشتراكات</a></li>
+              <li class="breadcrumb-item"><a
+                  href="subscriber-dashboard.html">لوحة التحكم</a></li>
+              <li class="breadcrumb-item"><a
+                  href="subscriptions-list.html">قائمة الاشتراكات</a></li>
               <li class="breadcrumb-item active" aria-current="page">إعدادات
                 الموقع</li>
             </ol>
           </nav>
         </div>
 
-        <div class="website-settings-body row align-items-start g-0">
+        <div class="row align-items-start g-0">
 
           <ul
-            class="nav website-settings-nav flex-column col-lg-3 mb-5 mb-lg-0">
+            class="nav sidebar-nav pt-2 flex-column col-lg-3 mb-5 mb-lg-0">
 
             <li class="nav-item">
-              <a class="nav-link active" href="#table-domains">النطاقات</a>
+              <a class="nav-link active" href="#domains"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24">
+                  <path id="globe-solid"
+                    d="M16.5,12a29.311,29.311,0,0,1-.155,3H7.655A28.034,28.034,0,0,1,7.5,12a29.311,29.311,0,0,1,.155-3h8.691A28.034,28.034,0,0,1,16.5,12Zm1.35-3h5.77a12.042,12.042,0,0,1,0,6H17.85A29.616,29.616,0,0,0,18,12,29.616,29.616,0,0,0,17.85,9Zm5.278-1.5h-5.47A16.488,16.488,0,0,0,15.066.394,12.023,12.023,0,0,1,23.123,7.5Zm-6.989,0H7.861A18.892,18.892,0,0,1,9.127,3.061,7.657,7.657,0,0,1,10.7.647,1.937,1.937,0,0,1,12,0a1.937,1.937,0,0,1,1.3.647,7.657,7.657,0,0,1,1.57,2.414A18.543,18.543,0,0,1,16.139,7.5Zm-9.8,0H.872A12.031,12.031,0,0,1,8.934.394,16.488,16.488,0,0,0,6.342,7.5ZM.38,9H6.15a30.075,30.075,0,0,0,0,6H.38a12.042,12.042,0,0,1,0-6ZM9.127,20.934A18.565,18.565,0,0,1,7.861,16.5h8.278a18.785,18.785,0,0,1-1.266,4.434,7.657,7.657,0,0,1-1.57,2.414A1.926,1.926,0,0,1,12,24a1.937,1.937,0,0,1-1.3-.647,7.657,7.657,0,0,1-1.57-2.414ZM6.342,16.5a16.488,16.488,0,0,0,2.592,7.106A12.031,12.031,0,0,1,.872,16.5Zm16.786,0a12.033,12.033,0,0,1-8.058,7.106A16.548,16.548,0,0,0,17.663,16.5h5.466Z"
+                    fill="#07253f" />
+                </svg> النطاقات</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#table-voice-commands">الأوامر الصوتية</a>
+              <a class="nav-link" href="#voice-commands"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24">
+                  <g id="microphone-solid" transform="translate(-874 -499)">
+                    <rect id="Rectangle_7590" data-name="Rectangle 7590"
+                      width="24" height="24" transform="translate(874 499)"
+                      fill="#07253f" opacity="0" />
+                    <path id="microphone-solid-2" data-name="microphone-solid"
+                      d="M24.25,0a4.5,4.5,0,0,0-4.5,4.5V12a4.5,4.5,0,0,0,9,0V4.5A4.5,4.5,0,0,0,24.25,0Zm-6,10.125a1.125,1.125,0,0,0-2.25,0V12a8.253,8.253,0,0,0,7.125,8.175V21.75h-2.25a1.125,1.125,0,0,0,0,2.25h6.75a1.125,1.125,0,0,0,0-2.25h-2.25V20.175A8.253,8.253,0,0,0,32.5,12V10.125a1.125,1.125,0,0,0-2.25,0V12a6,6,0,0,1-12,0Z"
+                      transform="translate(861.75 499)" fill="#07253f" />
+                  </g>
+                </svg> الأوامر الصوتية
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#table-options-settings">الخيارات
-                والإعدادات</a>
+              <a class="nav-link" href="#options-settings">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24">
+                  <path id="screwdriver-wrench-solid"
+                    d="M3.657.223A1.124,1.124,0,0,0,2.176.317L.3,2.192A1.129,1.129,0,0,0,.2,3.673l3.75,4.875a1.126,1.126,0,0,0,.891.441H7.379L12.488,14.1a3.621,3.621,0,0,0,.67,4.2l5.25,5.25a1.5,1.5,0,0,0,2.123,0l3-3a1.5,1.5,0,0,0,0-2.123l-5.25-5.25a3.628,3.628,0,0,0-4.2-.67L8.972,7.395V4.863a1.119,1.119,0,0,0-.441-.891ZM.906,18.555a3.182,3.182,0,1,0,4.5,4.5l5.522-5.522a5.143,5.143,0,0,1-.169-3.051L7.866,11.59ZM23.972,6.738a6.817,6.817,0,0,0-.15-1.43.66.66,0,0,0-1.134-.281l-3,3a.753.753,0,0,1-.53.22h-2.69a.752.752,0,0,1-.75-.75V4.8a.753.753,0,0,1,.22-.53l3-3A.66.66,0,0,0,18.656.139a6.894,6.894,0,0,0-1.434-.15,6.751,6.751,0,0,0-6.75,6.75v.037l4,4a5.115,5.115,0,0,1,4.875,1.345l.736.736A6.758,6.758,0,0,0,23.972,6.738ZM2.6,20.238a1.125,1.125,0,1,1,1.125,1.125A1.125,1.125,0,0,1,2.6,20.238Z"
+                    transform="translate(0.028 0.012)" fill="#07253f" />
+                </svg> الخيارات والإعدادات</a>
             </li>
 
           </ul>
 
-          <div class="website-settings-content col-lg-9">
+          <div class="col-lg-9">
             <form action>
-              <div class="website-settings-form domains-settings">
+              <div
+                class="website-settings-form rounded-4 bg-white" id="domains">
                 <div
                   class="form-header d-flex justify-content-between align-items-center">
                   <div>
-                    <h2 class="form-header-title mb-2">إعدادات النطاقات</h2>
-                    <h3 class="form-header-subtitle">جامعة الأميرة نورة بن عبد
+                    <h2
+                      class="form-header-title">إعدادات
+                      النطاقات</h2>
+                    <h3 class="form-header-subtitle">جامعة الأميرة نورة
+                      بن عبد
                       الرحمن</h3></div>
-                  <a href
-                    class="btn btn-success d-inline-flex gap-2 align-items-center round-20 fw-semibold px-3 py-2">
+                  <button
+                    class="btn btn-download d-inline-flex gap-2 align-items-center round-20 fw-semibold px-4 py-12">
                     <i class="fa-solid fa-circle-check"></i>
                     <span> حفظ التعديلات </span>
-                  </a>
+                  </button>
                 </div>
                 <div class="form-body">
                   <div class="form-group">
                     <div class="mb-3">
-                      <label class="form-label">اسم الهيئة <span
+                      <label
+                        class="form-label d-flex align-items-center gap-1">اسم
+                        الهيئة <span
                           class="asterisk">*</span></label>
                       <input type="text" class="form-control"
                         value="جامعة الأميرة نورة بن عبد الرحمن">
                     </div>
                     <div class="mb-3">
-                      <label class="form-label">الاشتراك <span class="asterisk">*</span></label>
+                      <label
+                        class="form-label d-flex align-items-center gap-1">الاشتراك
+                        <span
+                          class="asterisk">*</span></label>
                       <input type="text" class="form-control"
                         value="جامعة الأميرة نورة بن عبد الرحمن">
                     </div>
                     <div>
-                      <label class="form-label">اسم النطاق <span
+                      <label
+                        class="form-label d-flex align-items-center gap-1">اسم
+                        النطاق <span
                           class="asterisk">*</span></label>
                       <input type="text" class="form-control"
                         value="https:mormorah.gov.sa/ar">
@@ -235,41 +390,649 @@
                   </div>
                   <h2 class="form-group-title">النطاقات المسموحة</h2>
                   <div class="form-group">
-                    <label class="form-label">أضف نطاق <span
+                    <label
+                      class="form-label d-flex align-items-center gap-1">أضف
+                      نطاق <span
                         class="asterisk">*</span></label>
+                    <div class="row gx-3 mb-3 add-domain-row">
+                      <div class="col">
+                        <div class="input-group">
+                          <span class="input-group-text bg-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                              height="20" viewBox="0 0 24 24">
+                              <g id="Group_7746" data-name="Group 7746"
+                                transform="translate(-526 -1515)">
+                                <rect id="Rectangle_7683"
+                                  data-name="Rectangle 7683" width="24"
+                                  height="24" transform="translate(526 1515)"
+                                  fill="#66769B" opacity="0" />
+                                <path id="bars-solid_2_"
+                                  data-name="bars-solid (2)"
+                                  d="M0,65.714A1.712,1.712,0,0,1,1.714,64H22.286a1.714,1.714,0,1,1,0,3.429H1.714A1.712,1.712,0,0,1,0,65.714Zm0,8.571a1.712,1.712,0,0,1,1.714-1.714H22.286a1.714,1.714,0,0,1,0,3.429H1.714A1.712,1.712,0,0,1,0,74.286Zm24,8.571a1.712,1.712,0,0,1-1.714,1.714H1.714a1.714,1.714,0,0,1,0-3.429H22.286A1.712,1.712,0,0,1,24,82.857Z"
+                                  transform="translate(526 1452.714)"
+                                  fill="#66769B" />
+                              </g>
+                            </svg>
+                          </span>
+                          <input type="text" class="form-control"
+                            placeholder="النطاق"
+                            value="https:mormorah.gov.sa/ar">
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <button type="button" class="btn btn-trash">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" viewBox="0 0 24 24">
+                            <g id="trash-can-solid"
+                              transform="translate(-553 -1180)">
+                              <rect id="Rectangle_7682"
+                                data-name="Rectangle 7682" width="24"
+                                height="24" transform="translate(553 1180)"
+                                fill="#ffffff" opacity="0" />
+                              <path id="trash-can-solid-2"
+                                data-name="trash-can-solid"
+                                d="M6.338.83A1.494,1.494,0,0,1,7.678,0h5.644a1.494,1.494,0,0,1,1.341.83L15,1.5h4.5a1.5,1.5,0,0,1,0,3H1.5a1.5,1.5,0,0,1,0-3H6ZM1.5,6h18V21a3,3,0,0,1-3,3H4.5a3,3,0,0,1-3-3ZM6,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,6,9Zm4.5,0a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,10.5,9ZM15,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,15,9Z"
+                                transform="translate(554.5 1180)"
+                                fill="#ffffff" />
+                            </g>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="row gx-3 mb-3 add-domain-row">
+                      <div class="col">
+                        <div class="input-group">
+                          <span class="input-group-text bg-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                              height="20" viewBox="0 0 24 24">
+                              <g id="Group_7746" data-name="Group 7746"
+                                transform="translate(-526 -1515)">
+                                <rect id="Rectangle_7683"
+                                  data-name="Rectangle 7683" width="24"
+                                  height="24" transform="translate(526 1515)"
+                                  fill="#66769B" opacity="0" />
+                                <path id="bars-solid_2_"
+                                  data-name="bars-solid (2)"
+                                  d="M0,65.714A1.712,1.712,0,0,1,1.714,64H22.286a1.714,1.714,0,1,1,0,3.429H1.714A1.712,1.712,0,0,1,0,65.714Zm0,8.571a1.712,1.712,0,0,1,1.714-1.714H22.286a1.714,1.714,0,0,1,0,3.429H1.714A1.712,1.712,0,0,1,0,74.286Zm24,8.571a1.712,1.712,0,0,1-1.714,1.714H1.714a1.714,1.714,0,0,1,0-3.429H22.286A1.712,1.712,0,0,1,24,82.857Z"
+                                  transform="translate(526 1452.714)"
+                                  fill="#66769B" />
+                              </g>
+                            </svg>
+                          </span>
+                          <input type="text" class="form-control"
+                            placeholder="النطاق"
+                            value="https://www.google.com/search?q=information">
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <button type="button" class="btn btn-trash">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" viewBox="0 0 24 24">
+                            <g id="trash-can-solid"
+                              transform="translate(-553 -1180)">
+                              <rect id="Rectangle_7682"
+                                data-name="Rectangle 7682" width="24"
+                                height="24" transform="translate(553 1180)"
+                                fill="#ffffff" opacity="0" />
+                              <path id="trash-can-solid-2"
+                                data-name="trash-can-solid"
+                                d="M6.338.83A1.494,1.494,0,0,1,7.678,0h5.644a1.494,1.494,0,0,1,1.341.83L15,1.5h4.5a1.5,1.5,0,0,1,0,3H1.5a1.5,1.5,0,0,1,0-3H6ZM1.5,6h18V21a3,3,0,0,1-3,3H4.5a3,3,0,0,1-3-3ZM6,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,6,9Zm4.5,0a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,10.5,9ZM15,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,15,9Z"
+                                transform="translate(554.5 1180)"
+                                fill="#ffffff" />
+                            </g>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="row gx-3 mb-3 add-domain-row">
+                      <div class="col">
+                        <div class="input-group">
+                          <span class="input-group-text bg-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                              height="20" viewBox="0 0 24 24">
+                              <g id="Group_7746" data-name="Group 7746"
+                                transform="translate(-526 -1515)">
+                                <rect id="Rectangle_7683"
+                                  data-name="Rectangle 7683" width="24"
+                                  height="24" transform="translate(526 1515)"
+                                  fill="#66769B" opacity="0" />
+                                <path id="bars-solid_2_"
+                                  data-name="bars-solid (2)"
+                                  d="M0,65.714A1.712,1.712,0,0,1,1.714,64H22.286a1.714,1.714,0,1,1,0,3.429H1.714A1.712,1.712,0,0,1,0,65.714Zm0,8.571a1.712,1.712,0,0,1,1.714-1.714H22.286a1.714,1.714,0,0,1,0,3.429H1.714A1.712,1.712,0,0,1,0,74.286Zm24,8.571a1.712,1.712,0,0,1-1.714,1.714H1.714a1.714,1.714,0,0,1,0-3.429H22.286A1.712,1.712,0,0,1,24,82.857Z"
+                                  transform="translate(526 1452.714)"
+                                  fill="#66769B" />
+                              </g>
+                            </svg>
+                          </span>
+                          <input type="text" class="form-control"
+                            placeholder="النطاق"
+                            value="https:mormorah.gov.sa/ar">
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <button type="button" class="btn btn-trash">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" viewBox="0 0 24 24">
+                            <g id="trash-can-solid"
+                              transform="translate(-553 -1180)">
+                              <rect id="Rectangle_7682"
+                                data-name="Rectangle 7682" width="24"
+                                height="24" transform="translate(553 1180)"
+                                fill="#ffffff" opacity="0" />
+                              <path id="trash-can-solid-2"
+                                data-name="trash-can-solid"
+                                d="M6.338.83A1.494,1.494,0,0,1,7.678,0h5.644a1.494,1.494,0,0,1,1.341.83L15,1.5h4.5a1.5,1.5,0,0,1,0,3H1.5a1.5,1.5,0,0,1,0-3H6ZM1.5,6h18V21a3,3,0,0,1-3,3H4.5a3,3,0,0,1-3-3ZM6,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,6,9Zm4.5,0a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,10.5,9ZM15,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,15,9Z"
+                                transform="translate(554.5 1180)"
+                                fill="#ffffff" />
+                            </g>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="row gx-3 mb-4 add-domain-row">
+                      <div class="col">
+                        <div class="input-group">
+                          <span class="input-group-text bg-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                              height="20" viewBox="0 0 24 24">
+                              <g id="Group_7746" data-name="Group 7746"
+                                transform="translate(-526 -1515)">
+                                <rect id="Rectangle_7683"
+                                  data-name="Rectangle 7683" width="24"
+                                  height="24" transform="translate(526 1515)"
+                                  fill="#66769B" opacity="0" />
+                                <path id="bars-solid_2_"
+                                  data-name="bars-solid (2)"
+                                  d="M0,65.714A1.712,1.712,0,0,1,1.714,64H22.286a1.714,1.714,0,1,1,0,3.429H1.714A1.712,1.712,0,0,1,0,65.714Zm0,8.571a1.712,1.712,0,0,1,1.714-1.714H22.286a1.714,1.714,0,0,1,0,3.429H1.714A1.712,1.712,0,0,1,0,74.286Zm24,8.571a1.712,1.712,0,0,1-1.714,1.714H1.714a1.714,1.714,0,0,1,0-3.429H22.286A1.712,1.712,0,0,1,24,82.857Z"
+                                  transform="translate(526 1452.714)"
+                                  fill="#66769B" />
+                              </g>
+                            </svg>
+                          </span>
+                          <input type="text" class="form-control"
+                            placeholder="النطاق"
+                            value="https://www.google.com/search">
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <button type="button" class="btn btn-trash">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" viewBox="0 0 24 24">
+                            <g id="trash-can-solid"
+                              transform="translate(-553 -1180)">
+                              <rect id="Rectangle_7682"
+                                data-name="Rectangle 7682" width="24"
+                                height="24" transform="translate(553 1180)"
+                                fill="#ffffff" opacity="0" />
+                              <path id="trash-can-solid-2"
+                                data-name="trash-can-solid"
+                                d="M6.338.83A1.494,1.494,0,0,1,7.678,0h5.644a1.494,1.494,0,0,1,1.341.83L15,1.5h4.5a1.5,1.5,0,0,1,0,3H1.5a1.5,1.5,0,0,1,0-3H6ZM1.5,6h18V21a3,3,0,0,1-3,3H4.5a3,3,0,0,1-3-3ZM6,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,6,9Zm4.5,0a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,10.5,9ZM15,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,15,9Z"
+                                transform="translate(554.5 1180)"
+                                fill="#ffffff" />
+                            </g>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <button id="add-new-domain" type="button"
+                      class="btn btn-primary gap-2 align-items-center rounded-pill py-12 px-4">
+                      <span><img
+                          src="assets/images/icons/plus.circle.fill.svg"
+                          width="16px" height="16px"></span>
+                      <span>أضف نطاق جديد</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="website-settings-form rounded-4 bg-white"
+                id="voice-commands">
+                <div
+                  class="form-header d-flex justify-content-between align-items-center">
+                  <div>
+                    <h2
+                      class="form-header-title">إعدادات الأوامر الصوتية</h2>
+                    <h3 class="form-header-subtitle">جامعة الأميرة نورة
+                      بن عبد
+                      الرحمن</h3></div>
+                  <button
+                    class="btn btn-download disabled d-inline-flex gap-2 align-items-center round-20 fw-semibold px-4 py-12"
+                    disabled>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span> حفظ التعديلات </span>
+                  </button>
+                </div>
+                <div class="form-body">
+                  <div class="form-group border-bottom add-voice-command-row">
                     <div class="mb-3">
-                      <div class="input-group">
-                        <span class="input-group-text"><img
-                            src="assets/images/icons/trash-can-solid.svg"></span>
-                        <input type="text" class="form-control"
-                          placeholder="النطاق" value="https:mormorah.gov.sa/ar">
+                      <label class="form-label d-flex align-items-center gap-1">
+                        رابط الأمر الصوتي
+                        <span class="asterisk">*</span>
+                      </label>
+                      <input type="text" class="form-control"
+                        value="https://www.google.com/search?q=information">
+                    </div>
+                    <div class="row gx-3">
+                      <div class="col">
+                        <div>
+                          <label
+                            class="form-label d-flex align-items-center gap-1">
+                            اللغة
+                            <span class="asterisk">*</span>
+                          </label>
+                          <select class="form-select">
+                            <option value="arabic" selected>عربي</option>
+                            <option value="arabic">انجليزي</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-8">
+                        <div>
+                          <label
+                            class="form-label d-flex align-items-center gap-1">
+                            نص الأمر الصوتي
+                            <span class="asterisk">*</span>
+                          </label>
+                          <input type="text" class="form-control"
+                            value="التدريب">
+                        </div>
+                      </div>
+                      <div class="col-auto align-self-end">
+                        <button type="button" class="btn btn-trash">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" viewBox="0 0 24 24">
+                            <g id="trash-can-solid"
+                              transform="translate(-553 -1180)">
+                              <rect id="Rectangle_7682"
+                                data-name="Rectangle 7682" width="24"
+                                height="24" transform="translate(553 1180)"
+                                fill="#ffffff" opacity="0" />
+                              <path id="trash-can-solid-2"
+                                data-name="trash-can-solid"
+                                d="M6.338.83A1.494,1.494,0,0,1,7.678,0h5.644a1.494,1.494,0,0,1,1.341.83L15,1.5h4.5a1.5,1.5,0,0,1,0,3H1.5a1.5,1.5,0,0,1,0-3H6ZM1.5,6h18V21a3,3,0,0,1-3,3H4.5a3,3,0,0,1-3-3ZM6,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,6,9Zm4.5,0a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,10.5,9ZM15,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,15,9Z"
+                                transform="translate(554.5 1180)"
+                                fill="#ffffff" />
+                            </g>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group border-bottom add-voice-command-row">
+                    <div class="mb-3">
+                      <label class="form-label d-flex align-items-center gap-1">
+                        رابط الأمر الصوتي
+                        <span class="asterisk">*</span>
+                      </label>
+                      <input type="text" class="form-control"
+                        value="https://www.google.com/search?q=information">
+                    </div>
+                    <div class="row gx-3">
+                      <div class="col">
+                        <div>
+                          <label
+                            class="form-label d-flex align-items-center gap-1">
+                            اللغة
+                            <span class="asterisk">*</span>
+                          </label>
+                          <select class="form-select">
+                            <option value="arabic" selected>عربي</option>
+                            <option value="arabic">انجليزي</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-8">
+                        <div>
+                          <label
+                            class="form-label d-flex align-items-center gap-1">
+                            نص الأمر الصوتي
+                            <span class="asterisk">*</span>
+                          </label>
+                          <input type="text" class="form-control"
+                            value="البرامج التدريبية">
+                        </div>
+                      </div>
+                      <div class="col-auto align-self-end">
+                        <button type="button" class="btn btn-trash">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" viewBox="0 0 24 24">
+                            <g id="trash-can-solid"
+                              transform="translate(-553 -1180)">
+                              <rect id="Rectangle_7682"
+                                data-name="Rectangle 7682" width="24"
+                                height="24" transform="translate(553 1180)"
+                                fill="#ffffff" opacity="0" />
+                              <path id="trash-can-solid-2"
+                                data-name="trash-can-solid"
+                                d="M6.338.83A1.494,1.494,0,0,1,7.678,0h5.644a1.494,1.494,0,0,1,1.341.83L15,1.5h4.5a1.5,1.5,0,0,1,0,3H1.5a1.5,1.5,0,0,1,0-3H6ZM1.5,6h18V21a3,3,0,0,1-3,3H4.5a3,3,0,0,1-3-3ZM6,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,6,9Zm4.5,0a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,10.5,9ZM15,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,15,9Z"
+                                transform="translate(554.5 1180)"
+                                fill="#ffffff" />
+                            </g>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group border-bottom add-voice-command-row">
+                    <div class="mb-3">
+                      <label class="form-label d-flex align-items-center gap-1">
+                        رابط الأمر الصوتي
+                        <span class="asterisk">*</span>
+                      </label>
+                      <input type="text" class="form-control"
+                        value="https://www.google.com/search?q=information">
+                    </div>
+                    <div class="row gx-3">
+                      <div class="col">
+                        <div>
+                          <label
+                            class="form-label d-flex align-items-center gap-1">
+                            اللغة
+                            <span class="asterisk">*</span>
+                          </label>
+                          <select class="form-select">
+                            <option value="arabic" selected>عربي</option>
+                            <option value="arabic">انجليزي</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-8">
+                        <div>
+                          <label
+                            class="form-label d-flex align-items-center gap-1">
+                            نص الأمر الصوتي
+                            <span class="asterisk">*</span>
+                          </label>
+                          <input type="text" class="form-control"
+                            value="الخدمات الإلكترونية">
+                        </div>
+                      </div>
+                      <div class="col-auto align-self-end">
+                        <button type="button" class="btn btn-trash">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" viewBox="0 0 24 24">
+                            <g id="trash-can-solid"
+                              transform="translate(-553 -1180)">
+                              <rect id="Rectangle_7682"
+                                data-name="Rectangle 7682" width="24"
+                                height="24" transform="translate(553 1180)"
+                                fill="#ffffff" opacity="0" />
+                              <path id="trash-can-solid-2"
+                                data-name="trash-can-solid"
+                                d="M6.338.83A1.494,1.494,0,0,1,7.678,0h5.644a1.494,1.494,0,0,1,1.341.83L15,1.5h4.5a1.5,1.5,0,0,1,0,3H1.5a1.5,1.5,0,0,1,0-3H6ZM1.5,6h18V21a3,3,0,0,1-3,3H4.5a3,3,0,0,1-3-3ZM6,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,6,9Zm4.5,0a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,10.5,9ZM15,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,15,9Z"
+                                transform="translate(554.5 1180)"
+                                fill="#ffffff" />
+                            </g>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group border-bottom add-voice-command-row">
+                    <div class="mb-3">
+                      <label class="form-label d-flex align-items-center gap-1">
+                        رابط الأمر الصوتي
+                        <span class="asterisk">*</span>
+                      </label>
+                      <input type="text" class="form-control"
+                        value="https://www.google.com/search?q=information">
+                    </div>
+                    <div class="row gx-3">
+                      <div class="col">
+                        <div>
+                          <label
+                            class="form-label d-flex align-items-center gap-1">
+                            اللغة
+                            <span class="asterisk">*</span>
+                          </label>
+                          <select class="form-select">
+                            <option value="arabic" selected>عربي</option>
+                            <option value="arabic">انجليزي</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-8">
+                        <div>
+                          <label
+                            class="form-label d-flex align-items-center gap-1">
+                            نص الأمر الصوتي
+                            <span class="asterisk">*</span>
+                          </label>
+                          <input type="text" class="form-control"
+                            value="التوظيف">
+                        </div>
+                      </div>
+                      <div class="col-auto align-self-end">
+                        <button type="button" class="btn btn-trash">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" viewBox="0 0 24 24">
+                            <g id="trash-can-solid"
+                              transform="translate(-553 -1180)">
+                              <rect id="Rectangle_7682"
+                                data-name="Rectangle 7682" width="24"
+                                height="24" transform="translate(553 1180)"
+                                fill="#ffffff" opacity="0" />
+                              <path id="trash-can-solid-2"
+                                data-name="trash-can-solid"
+                                d="M6.338.83A1.494,1.494,0,0,1,7.678,0h5.644a1.494,1.494,0,0,1,1.341.83L15,1.5h4.5a1.5,1.5,0,0,1,0,3H1.5a1.5,1.5,0,0,1,0-3H6ZM1.5,6h18V21a3,3,0,0,1-3,3H4.5a3,3,0,0,1-3-3ZM6,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,6,9Zm4.5,0a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,10.5,9ZM15,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,15,9Z"
+                                transform="translate(554.5 1180)"
+                                fill="#ffffff" />
+                            </g>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-4 px-4">
+                    <button type="button" id="add-voice-command"
+                      class="btn btn-primary gap-2 align-items-center rounded-pill py-12 px-4 ms-2">
+                      <span><img
+                          src="assets/images/icons/plus.circle.fill.svg"
+                          width="16px" height="16px"></span>
+                      <span>أضف أمر صوتي</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="website-settings-form rounded-4 bg-white"
+                id="options-settings">
+                <div
+                  class="form-header d-flex justify-content-between align-items-center">
+                  <div>
+                    <h2
+                      class="form-header-title">الخيارات والإعدادات</h2>
+                    <h3 class="form-header-subtitle">جامعة الأميرة نورة
+                      بن عبد
+                      الرحمن</h3></div>
+                  <a href
+                    class="btn btn-download d-inline-flex gap-2 align-items-center round-20 fw-semibold px-4 py-12">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span> حفظ التعديلات </span>
+                  </a>
+                </div>
+                <div class="form-body">
+                  <div class="form-group">
+                    <div class="mb-3">
+                      <label class="form-label">اللغة المدعومة</label>
+                      <div class="row gx-3">
+                        <div class="col">
+                          <div>
+                            <input type="radio"
+                              id="arabic" name="language" checked>
+                            <label for="arabic">عربية</label>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div>
+                            <input type="radio"
+                              id="english" name="language">
+                            <label for="english">إنجليزية</label>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div class="mb-3">
-                      <div class="input-group">
-                        <span class="input-group-text"><img
-                            src="assets/images/icons/trash-can-solid.svg"></span>
-                        <input type="text" class="form-control"
-                          placeholder="النطاق"
-                          value="https://www.google.com/search?q=information">
-                      </div>
+                      <label class="form-label">القالب</label>
+                      <select class="form-select">
+                        <option value="جانبا">جانبا</option>
+                      </select>
                     </div>
                     <div class="mb-3">
-                      <div class="input-group">
-                        <span class="input-group-text"><img
-                            src="assets/images/icons/trash-can-solid.svg"></span>
-                        <input type="text" class="form-control"
-                          placeholder="النطاق" value="https:mormorah.gov.sa/ar">
-                      </div>
+                      <label class="form-label">محاذاة الشريط الجانبي</label>
+                      <select class="form-select">
+                        <option value="يسار">يسار</option>
+                      </select>
                     </div>
-                    <div class="mb-4">
-                      <div class="input-group">
-                        <span class="input-group-text"><img
-                            src="assets/images/icons/trash-can-solid.svg"></span>
-                        <input type="text" class="form-control"
-                          placeholder="النطاق"
-                          value="https://www.google.com/search">
-                      </div>
+                  </div>
+                  <h2 class="form-group-title">إعدادات النافذة المنبثقة</h2>
+                  <div class="form-group border-bottom">
+                    <div>
+                      <label class="form-label">حركات النافذة المنبثقة</label>
+                      <select class="form-select">
+                        <option value="تلاشي">تلاشي</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group px-0 pt-0">
+                    <div class="border-bottom">
+                      <label class="checkbox__switch">
+                        <input type="checkbox" checked />
+                        <div class="checkbox__body">تراكب النافذة المنبثقة</div>
+                        <div class="checkbox__checkmark"></div>
+                      </label>
+                    </div>
+                    <div class="border-bottom">
+                      <label class="checkbox__switch">
+                        <input type="checkbox" />
+                        <div class="checkbox__body">تمرير النافذة المنبثقة</div>
+                        <div class="checkbox__checkmark"></div>
+                      </label>
+                    </div>
+                    <div class="border-bottom">
+                      <label class="checkbox__switch">
+                        <input type="checkbox" checked />
+                        <div class="checkbox__body">الإغلاق في أي مكان</div>
+                        <div class="checkbox__checkmark"></div>
+                      </label>
+                    </div>
+                    <div class="border-bottom">
+                      <label class="checkbox__switch">
+                        <input type="checkbox" checked />
+                        <div class="checkbox__body">زر الإغلاق</div>
+                        <div class="checkbox__checkmark"></div>
+                      </label>
+                    </div>
+                    <div class="border-bottom">
+                      <label class="checkbox__switch">
+                        <input type="checkbox" checked />
+                        <div class="checkbox__body">النافذة المنبثقة قابل
+                          للسحب</div>
+                        <div class="checkbox__checkmark"></div>
+                      </label>
+                    </div>
+                    <div class="border-bottom">
+                      <label class="checkbox__switch">
+                        <input type="checkbox" />
+                        <div class="checkbox__body">ظل النافذة المنبثقة</div>
+                        <div class="checkbox__checkmark"></div>
+                      </label>
+                    </div>
+                    <div class="border-bottom">
+                      <label class="checkbox__switch">
+                        <input type="checkbox" checked />
+                        <div class="checkbox__body">ظل النافذة المنبثقة</div>
+                        <div class="checkbox__checkmark"></div>
+                      </label>
+                    </div>
+                  </div>
+                  <h2 class="form-group-title mb-4">إعدادات الزر المفتوحة</h2>
+                  <div class="form-group p-0">
+                    <div class="border-top">
+                      <label class="checkbox__switch">
+                        <input type="checkbox" checked />
+                        <div class="checkbox__body">إظهار الزر المفتوح</div>
+                        <div class="checkbox__checkmark"></div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group border-top pt-4">
+                    <div class="mb-3">
+                      <label class="form-label">فهرس جدولة الزر</label>
+                      <select class="form-select">
+                        <option value="فهرس جدولة الزر">فهرس جدولة الزر</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">موضع الزر</label>
+                      <select class="form-select">
+                        <option value="أسفل، يمين">أسفل، يمين</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">تسمية توضيحية للزر</label>
+                      <input type="text" class="form-control"
+                        placeholder="أكتب تسمية توضيحية للزر">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">أيقونة الزر</label>
+                      <input type="text" class="form-control"
+                        placeholder="أيقونة الزر">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">موضع الزر</label>
+                      <select class="form-select">
+                        <option value="أسفل، يمين">أسفل، يمين</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">موضع أيقونة الزر</label>
+                      <select class="form-select">
+                        <option value="قبل">قبل</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">تأثيرات الإدخال للزر</label>
+                      <select class="form-select">
+                        <option value="تلاشي">تلاشي</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label class="form-label">تأثيرات التمرير للزر</label>
+                      <select class="form-select">
+                        <option disabled selected>- اختر تأثيرات التمرير للزر
+                          -</option>
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <h2 class="form-group-title">خيارات التنقل الصوتي</h2>
+                  <div class="form-group px-0">
+                    <div class="border-top border-bottom">
+                      <label class="checkbox__switch">
+                        <input type="checkbox" checked />
+                        <div class="checkbox__body">التنقل الصوتي التلقائي</div>
+                        <div class="checkbox__checkmark"></div>
+                      </label>
+                    </div>
+                    <div class="border-bottom">
+                      <label class="checkbox__switch">
+                        <input type="checkbox" checked />
+                        <div class="checkbox__body">إخفاء النافذة المنبثقة
+                          تلقائيًا</div>
+                        <div class="checkbox__checkmark"></div>
+                      </label>
+                    </div>
+                  </div>
+                  <h2 class="form-group-title">التحليلات</h2>
+                  <div class="form-group px-0">
+                    <div class="border-top border-bottom">
+                      <label class="checkbox__switch">
+                        <input type="checkbox" />
+                        <div class="checkbox__body">خيار التحليلات</div>
+                        <div class="checkbox__checkmark"></div>
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -300,32 +1063,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- Modal -->
-    <div class="modal fade" id="meeting" tabindex="-1"
-      aria-labelledby="meetingLabel" aria-hidden="true">
-      <button type="button" class="btn-close" data-bs-dismiss="modal"
-        aria-label="Close">
-
-        <i class="fa-regular fa-xmark"></i>
-
-      </button>
-
-      <div class="modal-dialog">
-        <div class="modal-content">
-
-          <div class="modal-body">
-            <!-- Start of Meetings Embed Script -->
-            <div class="meetings-iframe-container"
-              data-src="https://meetings-eu1.hubspot.com/medhat-ramadan/muneers-website-meeting-link?embed=true"></div>
-            <script type="text/javascript"
-              src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
-            <!-- End of Meetings Embed Script -->
-          </div>
-
-        </div>
-      </div>
-    </div>
 
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>

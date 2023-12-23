@@ -1,0 +1,21 @@
+.nav-pills {
+  margin-bottom: 32px;
+  .nav-item {
+    .nav-link {
+      background: #ffffff;
+      border: 1px solid #d1dbf0;
+      border-radius: 24px;
+      font-size: 14px;
+      font-family: "Rubik";
+      color: #07253f !important;
+      padding: 15px 24px;
+      line-height: 16px;
+      &.active,
+      &:hover {
+        background: #006cf2;
+        box-shadow: 0px 4px 8px #006cf252;
+        color: #fff !important;
+      }
+    }
+  }
+}

@@ -1,695 +1,798 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" type="image" href="assets/images/logo.svg" />
-  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
-  <link rel="stylesheet" href="assets/css/animate.min.css">
-  <link rel="stylesheet" href="assets/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image" href="assets/images/logo.svg" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-  <title>قائمة عمليات الفحص</title>
- </head>
+    <title>قائمة عمليات الفحص</title>
+  </head>
 
- <body>
+  <body>
 
-  <header>
-   <nav class="navbar navbar-expand-lg main-nav flex-column">
-    <div class="container">
-     <div class="logo_social">
-      <a class="navbar-brand" href="./index.html">
-       <img width="128" class="img-fluid" src="assets/images/logo.svg"
-        alt>
-      </a>
-     </div>
-     <div class="collapse navbar-collapse " id="navbar-content">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-       <li class="nav-item">
-        <a class="nav-link active" aria-current="page"
-         href="./index.html">
-         <span>الرئيسية</span> </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link" href="./academy.html"> الأسعار </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link" href="./contact-us.html"> اتصل بنا </a>
-       </li>
-      </ul>
-     </div>
+    <header>
+      <nav class="navbar navbar-expand-lg main-nav flex-column">
+        <div class="container">
+          <div class="logo_social">
+            <a class="navbar-brand" href="./index.html">
+              <img width="128" class="img-fluid" src="assets/images/logo.svg"
+                alt>
+            </a>
+          </div>
+          <div class="collapse navbar-collapse " id="navbar-content">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"
+                  href="./index.html">
+                  <span>الرئيسية</span> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./academy.html"> الأسعار </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact-us.html"> اتصل بنا </a>
+              </li>
+            </ul>
+          </div>
 
-     <div class="buttons d-flex gap-3 align-items-center">
+          <div class="buttons d-flex gap-3 align-items-center">
 
-      <div class="dropdown notifications">
-       <button
-        class="btn btn-secondary p-0 bg-transparent border-0 fs-4"
-        type="button"
-        data-bs-toggle="dropdown" aria-expanded="false">
-        <i class="fa-solid fa-bell"></i></button>
-       <ul class="dropdown-menu left p-0">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else
-          here</a></li>
-       </ul>
-      </div>
-      <div class="dropdown profile-dropdown">
-       <button
-        class="btn btn-secondary p-0 bg-transparent border-0 fs-4"
-        type="button"
-        data-bs-toggle="dropdown" aria-expanded="false">
-        <img class="rounded-circle"
-         src="https://via.placeholder.com/48x48"
-         alt
-         width="48px"
-         height="48px">
-       </button>
-       <div class="dropdown-menu left p-0">
-        <div
-         class="dropdown-item dropdowm-item-profile-info py-3 ps-4">
-         <div class="avatar-profile-image">
-          <img class="rounded-circle" alt="avatar"
-           src="https://via.placeholder.com/48x48">
-         </div>
-         <div class="d-flex flex-column justify-content-center">
-          <h5 class="mb-1 profile-name">سيف الدين بروال</h5>
-          <h6 class="mb-0 profile-email">SeyfDesigner@munner.sa</h6>
-         </div>
+            <div class="dropdown notifications">
+              <button
+                class="btn btn-secondary btn-notifications p-0 bg-transparent border-0 fs-4"
+                type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bell"></i></button>
+              <div class="dropdown-menu left">
+                <div class="title py-3 px-4 border-bottom">
+                  <h2 class="m-0 color-1 small fw-normal">التنبيهات</h2>
+                </div>
+                <div class="dropdown-item py-3 px-4 not-read">
+                  <div
+                    class="d-flex justify-content-center flex-column gap-12">
+                    <div class="dropdown-item-message">
+                      تم تعيين تسجيل جديد لموقع: <strong>جامعة الأميرة نورة بنت
+                        عبد الرحمن.</strong></div>
+                    <time class="dropdown-item-time lh-base">2023/12/10</time>
+                  </div>
+                  <button class="btn btn-trash ms-auto p-0" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                      height="16" viewBox="0 0 24 24">
+                      <g id="trash-can-solid"
+                        transform="translate(-553 -1180)">
+                        <rect id="Rectangle_7682"
+                          data-name="Rectangle 7682" width="24"
+                          height="24" transform="translate(553 1180)"
+                          fill="#66759b" opacity="0" />
+                        <path id="trash-can-solid-2"
+                          data-name="trash-can-solid"
+                          d="M6.338.83A1.494,1.494,0,0,1,7.678,0h5.644a1.494,1.494,0,0,1,1.341.83L15,1.5h4.5a1.5,1.5,0,0,1,0,3H1.5a1.5,1.5,0,0,1,0-3H6ZM1.5,6h18V21a3,3,0,0,1-3,3H4.5a3,3,0,0,1-3-3ZM6,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,6,9Zm4.5,0a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,10.5,9ZM15,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,15,9Z"
+                          transform="translate(554.5 1180)"
+                          fill="#66759b" />
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+                <div class="dropdown-item py-3 px-4">
+                  <div
+                    class="d-flex justify-content-center flex-column gap-12">
+                    <div class="dropdown-item-message">
+                      تم الفحص بنجاح لموقع: <strong>مركز الملك
+                        سلمان لأبحاث الإعاقة!</strong></div>
+                    <time class="dropdown-item-time lh-base">2023/12/10</time>
+                  </div>
+                  <button class="btn btn-trash ms-auto p-0" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                      height="16" viewBox="0 0 24 24">
+                      <g id="trash-can-solid"
+                        transform="translate(-553 -1180)">
+                        <rect id="Rectangle_7682"
+                          data-name="Rectangle 7682" width="24"
+                          height="24" transform="translate(553 1180)"
+                          fill="#66759b" opacity="0" />
+                        <path id="trash-can-solid-2"
+                          data-name="trash-can-solid"
+                          d="M6.338.83A1.494,1.494,0,0,1,7.678,0h5.644a1.494,1.494,0,0,1,1.341.83L15,1.5h4.5a1.5,1.5,0,0,1,0,3H1.5a1.5,1.5,0,0,1,0-3H6ZM1.5,6h18V21a3,3,0,0,1-3,3H4.5a3,3,0,0,1-3-3ZM6,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,6,9Zm4.5,0a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,10.5,9ZM15,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,15,9Z"
+                          transform="translate(554.5 1180)"
+                          fill="#66759b" />
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+                <div class="dropdown-item py-3 px-4 not-read">
+                  <div
+                    class="d-flex justify-content-center flex-column gap-12">
+                    <div class="dropdown-item-message">
+                      تحديثات جديدة في <strong>شروط الاستخدام.</strong></div>
+                    <time class="dropdown-item-time lh-base">2023/12/10</time>
+                  </div>
+                  <button class="btn btn-trash ms-auto p-0" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                      height="16" viewBox="0 0 24 24">
+                      <g id="trash-can-solid"
+                        transform="translate(-553 -1180)">
+                        <rect id="Rectangle_7682"
+                          data-name="Rectangle 7682" width="24"
+                          height="24" transform="translate(553 1180)"
+                          fill="#66759b" opacity="0" />
+                        <path id="trash-can-solid-2"
+                          data-name="trash-can-solid"
+                          d="M6.338.83A1.494,1.494,0,0,1,7.678,0h5.644a1.494,1.494,0,0,1,1.341.83L15,1.5h4.5a1.5,1.5,0,0,1,0,3H1.5a1.5,1.5,0,0,1,0-3H6ZM1.5,6h18V21a3,3,0,0,1-3,3H4.5a3,3,0,0,1-3-3ZM6,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,6,9Zm4.5,0a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,10.5,9ZM15,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,15,9Z"
+                          transform="translate(554.5 1180)"
+                          fill="#66759b" />
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+                <div class="dropdown-item py-3 px-4 not-read">
+                  <div
+                    class="d-flex justify-content-center flex-column gap-12">
+                    <div class="dropdown-item-message">
+                      تم تعيين تسجيل جديد لموقع: <strong>شركة
+                        التقنيات المشتركة SharedTech.</strong></div>
+                    <time class="dropdown-item-time lh-base">2023/12/10</time>
+                  </div>
+                  <button class="btn btn-trash ms-auto p-0" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                      height="16" viewBox="0 0 24 24">
+                      <g id="trash-can-solid"
+                        transform="translate(-553 -1180)">
+                        <rect id="Rectangle_7682"
+                          data-name="Rectangle 7682" width="24"
+                          height="24" transform="translate(553 1180)"
+                          fill="#66759b" opacity="0" />
+                        <path id="trash-can-solid-2"
+                          data-name="trash-can-solid"
+                          d="M6.338.83A1.494,1.494,0,0,1,7.678,0h5.644a1.494,1.494,0,0,1,1.341.83L15,1.5h4.5a1.5,1.5,0,0,1,0,3H1.5a1.5,1.5,0,0,1,0-3H6ZM1.5,6h18V21a3,3,0,0,1-3,3H4.5a3,3,0,0,1-3-3ZM6,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,6,9Zm4.5,0a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,10.5,9ZM15,9a.752.752,0,0,0-.75.75v10.5a.75.75,0,0,0,1.5,0V9.75A.752.752,0,0,0,15,9Z"
+                          transform="translate(554.5 1180)"
+                          fill="#66759b" />
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown profile-dropdown">
+              <button
+                class="btn btn-secondary p-0 bg-transparent border-0 fs-4"
+                type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="rounded-circle"
+                  src="https://via.placeholder.com/48x48"
+                  alt
+                  width="48px"
+                  height="48px">
+              </button>
+              <div class="dropdown-menu left p-0">
+                <div
+                  class="dropdown-item dropdowm-item-profile-info py-3 ps-4">
+                  <div class="avatar-profile-image">
+                    <img class="rounded-circle" alt="avatar"
+                      src="https://via.placeholder.com/48x48">
+                  </div>
+                  <div class="d-flex flex-column justify-content-center">
+                    <h5 class="mb-1 profile-name">سيف الدين بروال</h5>
+                    <h6 class="mb-0 profile-email">SeyfDesigner@munner.sa</h6>
+                  </div>
+                </div>
+                <a href="subscriber-dashboard.html" class="dropdown-item ps-4">
+                  <span class="icon">
+                    <img src="assets/images/icons/square.grid.2x2.svg"
+                      height="20px">
+                  </span> لوحة التحكم
+                </a>
+                <a href="profile.html" class="dropdown-item ps-4">
+                  <span class="icon">
+                    <img src="assets/images/icons/person.svg" height="20px">
+                  </span> الملف الشخصي
+                </a>
+                <a href="my-subscriptions.html" class="dropdown-item ps-4">
+                  <span class="icon">
+                    <img src="assets/images/icons/crown.grey.svg"
+                      height="20px">
+                  </span> اشتراكاتي
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item ps-4">
+                  <span class="icon">
+                    <img
+                      src="assets/images/icons/rectangle.portrait.and.arrow.right.svg"
+                      height="20px">
+                  </span> تسجيل الخروج
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <button class="navbar-toggler collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbar-content">
+            <div class="hamburger-toggle">
+              <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </button>
+
         </div>
-        <a href="subscriber-dashboard.html" class="dropdown-item ps-4">
-         <span class="icon">
-          <img src="assets/images/icons/square.grid.2x2.svg"
-           height="20px">
-         </span> لوحة التحكم
-        </a>
-        <a href="profile.html" class="dropdown-item ps-4">
-         <span class="icon">
-          <img src="assets/images/icons/person.svg" height="20px">
-         </span> الملف الشخصي
-        </a>
-        <a href="my-subscriptions.html" class="dropdown-item ps-4">
-         <span class="icon">
-          <img src="assets/images/icons/crown.grey.svg"
-           height="20px">
-         </span> اشتراكاتي
-        </a>
-        <div class="dropdown-divider"></div>
-        <a href="#" class="dropdown-item ps-4">
-         <span class="icon">
-          <img
-           src="assets/images/icons/rectangle.portrait.and.arrow.right.svg"
-           height="20px">
-         </span> تسجيل الخروج
-        </a>
-       </div>
+
+      </nav>
+      <nav class="subnav">
+        <div class="container">
+          <div
+            class="d-flex flex-column align-items-center flex-lg-row gap-4 gap-lg-0">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page"
+                  href="subscriber-dashboard.html">
+                  <img src="assets/images/icons/chart.pie.fill.svg">
+                  <span>بيانات
+                    عامة</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page"
+                  href="subscriptions-list.html">
+                  <img src="assets/images/icons/bolt.badge.clock.fill.svg">
+                  <span>قائمة الاشتراكات</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"
+                  href="scan-list.html">
+                  <img
+                    src="assets/images/icons/chart.bar.xaxis.ascending.badge.clock.svg">
+                  <span>قائمة عمليات الفحص</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page"
+                  href="my-subscriptions.html">
+                  <img src="assets/images/icons/crown.fill.svg">
+                  <span>اشتراكاتي</span>
+                </a>
+              </li>
+            </ul>
+            <div
+              class="buttons d-flex justify-content-center align-items-center ms-lg-auto gap-3">
+              <a href="new-scan.html"
+                class="btn d-inline-flex justify-content-center gap-2">
+                <img
+                  src="assets/images/icons/magnifying-glass-chart-solid.svg">
+                <span>فحص جديد</span>
+              </a>
+              <a href="#"
+                class="btn d-inline-flex justify-content-center gap-2">
+                <img src="assets/images/icons/plus.circle.fill.svg">
+                <span>أضف موقع</span></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+    <!-- End header -->
+
+    <section class="subscriber-dashboard-page logged-in">
+      <div class="container">
+
+        <div class="table">
+          <div
+            class="table-header d-flex justify-content-between align-items-center">
+            <h2 class="table-header-title">قائمة عمليات الفحص</h2>
+            <button
+              class="btn btn-dark d-inline-flex align-items-center round-20 px-4">ابحث
+              الآن</button>
+          </div>
+          <div class="table-body">
+            <div class="overflow-auto">
+              <table class="w-100">
+                <thead>
+                  <tr>
+                    <th scope="col" class="text-center">#</th>
+                    <th scope="col">الموقع</th>
+                    <th scope="col">تاريخ الفحص</th>
+                    <th scope="col">نسبة التوافق</th>
+                    <th scope="col">مؤشر التحسين</th>
+                    <th scope="col">الإجراءات</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center">1</td>
+                    <td>www.munner.sa</td>
+                    <td>الأربعاء 2023/12/6 - 22:56</td>
+                    <td class="fw-semibold">76%</td>
+                    <td>
+                      <div class="improvement-indicator up">
+                        <span>13%</span>
+                        <span>
+                          <img src="assets/images/icons/arrow.up.right.svg"
+                            width="12px" height="12px">
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="btn-group download-report-btn-group">
+                          <button
+                            class="btn btn-primary px-3 py-2 download-report-btn rounded-4 rounded-end d-flex align-items-center justify-content-center gap-2"
+                            type="button">
+                            <span>
+                              <img src="assets/images/icons/download.svg"
+                                width="15px" height="15px">
+                            </span>
+                            <span>تحميل التقرير</span>
+                          </button>
+                          <button type="button"
+                            class="btn btn-primary px-3 dropdown-toggle dropdown-toggle-split rounded-4 rounded-start"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle
+                              Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another
+                                action</a></li>
+                            <li><a class="dropdown-item" href="#">Something
+                                else
+                                here</a></li>
+                          </ul>
+                        </div>
+                        <button
+                          class="btn btn-outline-semidark rounded-4 d-flex justify-content-center align-items-center gap-1"><img
+                            src="assets/images/icons/eye-solid-black.svg"
+                            width="16px"><span>معاينة</span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">2</td>
+                    <td>dev.munner.sa</td>
+                    <td>الاثنين 2023/11/27 - 18:21</td>
+                    <td class="fw-semibold">63%</td>
+                    <td>
+                      <div class="improvement-indicator down">
+                        <span>8%</span>
+                        <span>
+                          <img src="assets/images/icons/arrow.down.right.svg"
+                            width="12px" height="12px">
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="btn-group download-report-btn-group">
+                          <button
+                            class="btn btn-primary px-3 download-report-btn rounded-4 rounded-end d-flex align-items-center justify-content-center gap-2"
+                            type="button">
+                            <span>
+                              <img src="assets/images/icons/download.svg"
+                                width="15px" height="15px">
+                            </span>
+                            <span>تحميل التقرير</span>
+                          </button>
+                          <button type="button"
+                            class="btn btn-primary px-3 py-2 dropdown-toggle dropdown-toggle-split rounded-4 rounded-start"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle
+                              Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another
+                                action</a></li>
+                            <li><a class="dropdown-item" href="#">Something
+                                else
+                                here</a></li>
+                          </ul>
+                        </div>
+                        <button
+                          class="btn btn-outline-semidark rounded-4 d-flex justify-content-center align-items-center gap-1"><img
+                            src="assets/images/icons/eye-solid-black.svg"
+                            width="16px"><span>معاينة</span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">3</td>
+                    <td>blog.munner.sa</td>
+                    <td>السبت 2023/11/18 - 20:47</td>
+                    <td class="fw-semibold">76%</td>
+                    <td>
+                      <div class="improvement-indicator up">
+                        <span>43%</span>
+                        <span>
+                          <img src="assets/images/icons/arrow.up.right.svg"
+                            width="12px" height="12px">
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="btn-group download-report-btn-group">
+                          <button
+                            class="btn btn-primary px-3 download-report-btn rounded-4 rounded-end d-flex align-items-center justify-content-center gap-2"
+                            type="button">
+                            <span>
+                              <img src="assets/images/icons/download.svg"
+                                width="15px" height="15px">
+                            </span>
+                            <span>تحميل التقرير</span>
+                          </button>
+                          <button type="button"
+                            class="btn btn-primary px-3 py-2 dropdown-toggle dropdown-toggle-split rounded-4 rounded-start"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle
+                              Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another
+                                action</a></li>
+                            <li><a class="dropdown-item" href="#">Something
+                                else
+                                here</a></li>
+                          </ul>
+                        </div>
+                        <button
+                          class="btn btn-outline-semidark rounded-4 d-flex justify-content-center align-items-center gap-1"><img
+                            src="assets/images/icons/eye-solid-black.svg"
+                            width="16px"><span>معاينة</span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">1</td>
+                    <td>www.munner.sa</td>
+                    <td>الأربعاء 2023/12/6 - 22:56</td>
+                    <td class="fw-semibold">76%</td>
+                    <td>
+                      <div class="improvement-indicator up">
+                        <span>13%</span>
+                        <span>
+                          <img src="assets/images/icons/arrow.up.right.svg"
+                            width="12px" height="12px">
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="btn-group download-report-btn-group">
+                          <button
+                            class="btn btn-primary px-3 py-2 download-report-btn rounded-4 rounded-end d-flex align-items-center justify-content-center gap-2"
+                            type="button">
+                            <span>
+                              <img src="assets/images/icons/download.svg"
+                                width="15px" height="15px">
+                            </span>
+                            <span>تحميل التقرير</span>
+                          </button>
+                          <button type="button"
+                            class="btn btn-primary px-3 dropdown-toggle dropdown-toggle-split rounded-4 rounded-start"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle
+                              Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another
+                                action</a></li>
+                            <li><a class="dropdown-item" href="#">Something
+                                else
+                                here</a></li>
+                          </ul>
+                        </div>
+                        <button
+                          class="btn btn-outline-semidark rounded-4 d-flex justify-content-center align-items-center gap-1"><img
+                            src="assets/images/icons/eye-solid-black.svg"
+                            width="16px"><span>معاينة</span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">2</td>
+                    <td>dev.munner.sa</td>
+                    <td>الاثنين 2023/11/27 - 18:21</td>
+                    <td class="fw-semibold">63%</td>
+                    <td>
+                      <div class="improvement-indicator down">
+                        <span>8%</span>
+                        <span>
+                          <img src="assets/images/icons/arrow.down.right.svg"
+                            width="12px" height="12px">
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="btn-group download-report-btn-group">
+                          <button
+                            class="btn btn-primary px-3 download-report-btn rounded-4 rounded-end d-flex align-items-center justify-content-center gap-2"
+                            type="button">
+                            <span>
+                              <img src="assets/images/icons/download.svg"
+                                width="15px" height="15px">
+                            </span>
+                            <span>تحميل التقرير</span>
+                          </button>
+                          <button type="button"
+                            class="btn btn-primary px-3 py-2 dropdown-toggle dropdown-toggle-split rounded-4 rounded-start"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle
+                              Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another
+                                action</a></li>
+                            <li><a class="dropdown-item" href="#">Something
+                                else
+                                here</a></li>
+                          </ul>
+                        </div>
+                        <button
+                          class="btn btn-outline-semidark rounded-4 d-flex justify-content-center align-items-center gap-1"><img
+                            src="assets/images/icons/eye-solid-black.svg"
+                            width="16px"><span>معاينة</span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">3</td>
+                    <td>blog.munner.sa</td>
+                    <td>السبت 2023/11/18 - 20:47</td>
+                    <td class="fw-semibold">76%</td>
+                    <td>
+                      <div class="improvement-indicator up">
+                        <span>43%</span>
+                        <span>
+                          <img src="assets/images/icons/arrow.up.right.svg"
+                            width="12px" height="12px">
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="btn-group download-report-btn-group">
+                          <button
+                            class="btn btn-primary px-3 download-report-btn rounded-4 rounded-end d-flex align-items-center justify-content-center gap-2"
+                            type="button">
+                            <span>
+                              <img src="assets/images/icons/download.svg"
+                                width="15px" height="15px">
+                            </span>
+                            <span>تحميل التقرير</span>
+                          </button>
+                          <button type="button"
+                            class="btn btn-primary px-3 py-2 dropdown-toggle dropdown-toggle-split rounded-4 rounded-start"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle
+                              Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another
+                                action</a></li>
+                            <li><a class="dropdown-item" href="#">Something
+                                else
+                                here</a></li>
+                          </ul>
+                        </div>
+                        <button
+                          class="btn btn-outline-semidark rounded-4 d-flex justify-content-center align-items-center gap-1"><img
+                            src="assets/images/icons/eye-solid-black.svg"
+                            width="16px"><span>معاينة</span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">1</td>
+                    <td>www.munner.sa</td>
+                    <td>الأربعاء 2023/12/6 - 22:56</td>
+                    <td class="fw-semibold">76%</td>
+                    <td>
+                      <div class="improvement-indicator up">
+                        <span>13%</span>
+                        <span>
+                          <img src="assets/images/icons/arrow.up.right.svg"
+                            width="12px" height="12px">
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="btn-group download-report-btn-group">
+                          <button
+                            class="btn btn-primary px-3 py-2 download-report-btn rounded-4 rounded-end d-flex align-items-center justify-content-center gap-2"
+                            type="button">
+                            <span>
+                              <img src="assets/images/icons/download.svg"
+                                width="15px" height="15px">
+                            </span>
+                            <span>تحميل التقرير</span>
+                          </button>
+                          <button type="button"
+                            class="btn btn-primary px-3 dropdown-toggle dropdown-toggle-split rounded-4 rounded-start"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle
+                              Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another
+                                action</a></li>
+                            <li><a class="dropdown-item" href="#">Something
+                                else
+                                here</a></li>
+                          </ul>
+                        </div>
+                        <button
+                          class="btn btn-outline-semidark rounded-4 d-flex justify-content-center align-items-center gap-1"><img
+                            src="assets/images/icons/eye-solid-black.svg"
+                            width="16px"><span>معاينة</span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">2</td>
+                    <td>dev.munner.sa</td>
+                    <td>الاثنين 2023/11/27 - 18:21</td>
+                    <td class="fw-semibold">63%</td>
+                    <td>
+                      <div class="improvement-indicator down">
+                        <span>8%</span>
+                        <span>
+                          <img src="assets/images/icons/arrow.down.right.svg"
+                            width="12px" height="12px">
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="btn-group download-report-btn-group">
+                          <button
+                            class="btn btn-primary px-3 download-report-btn rounded-4 rounded-end d-flex align-items-center justify-content-center gap-2"
+                            type="button">
+                            <span>
+                              <img src="assets/images/icons/download.svg"
+                                width="15px" height="15px">
+                            </span>
+                            <span>تحميل التقرير</span>
+                          </button>
+                          <button type="button"
+                            class="btn btn-primary px-3 py-2 dropdown-toggle dropdown-toggle-split rounded-4 rounded-start"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle
+                              Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another
+                                action</a></li>
+                            <li><a class="dropdown-item" href="#">Something
+                                else
+                                here</a></li>
+                          </ul>
+                        </div>
+                        <button
+                          class="btn btn-outline-semidark rounded-4 d-flex justify-content-center align-items-center gap-1"><img
+                            src="assets/images/icons/eye-solid-black.svg"
+                            width="16px"><span>معاينة</span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">3</td>
+                    <td>blog.munner.sa</td>
+                    <td>السبت 2023/11/18 - 20:47</td>
+                    <td class="fw-semibold">76%</td>
+                    <td>
+                      <div class="improvement-indicator up">
+                        <span>43%</span>
+                        <span>
+                          <img src="assets/images/icons/arrow.up.right.svg"
+                            width="12px" height="12px">
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="btn-group download-report-btn-group">
+                          <button
+                            class="btn btn-primary px-3 download-report-btn rounded-4 rounded-end d-flex align-items-center justify-content-center gap-2"
+                            type="button">
+                            <span>
+                              <img src="assets/images/icons/download.svg"
+                                width="15px" height="15px">
+                            </span>
+                            <span>تحميل التقرير</span>
+                          </button>
+                          <button type="button"
+                            class="btn btn-primary px-3 py-2 dropdown-toggle dropdown-toggle-split rounded-4 rounded-start"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle
+                              Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another
+                                action</a></li>
+                            <li><a class="dropdown-item" href="#">Something
+                                else
+                                here</a></li>
+                          </ul>
+                        </div>
+                        <button
+                          class="btn btn-outline-semidark rounded-4 d-flex justify-content-center align-items-center gap-1"><img
+                            src="assets/images/icons/eye-solid-black.svg"
+                            width="16px"><span>معاينة</span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
-     </div>
+    </section>
 
-     <button class="navbar-toggler collapsed" type="button"
-      data-bs-toggle="collapse" data-bs-target="#navbar-content">
-      <div class="hamburger-toggle">
-       <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-       </div>
+    <footer>
+      <div class="copyrights">
+        <div class="container">
+          <div class="row text-center text-md-start">
+            <div class="col-md-6">
+              <p class="m-0">© جميع الحقوق محفوظة لمنير 2023</p>
+            </div>
+            <div class="col-md-6">
+              <div class="polices  text-md-end">
+                <a href>الشروط والأحكام</a>
+                <a href>سياسة الخصوصية</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-     </button>
+    </footer>
 
-    </div>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/wow.min.js "></script>
+    <script src="assets/js/script.js "></script>
 
-   </nav>
-   <nav class="subnav">
-    <div class="container">
-     <div
-      class="d-flex flex-column align-items-center flex-lg-row gap-4 gap-lg-0">
-      <ul class="nav">
-       <li class="nav-item">
-        <a class="nav-link" aria-current="page"
-         href="subscriber-dashboard.html">
-         <img src="assets/images/icons/chart.pie.fill.svg">
-         <span>بيانات
-          عامة</span>
-        </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link" aria-current="page"
-         href="subscriptions-list.html">
-         <img src="assets/images/icons/bolt.badge.clock.fill.svg">
-         <span>قائمة الاشتراكات</span>
-        </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="scan-list.html">
-         <img
-          src="assets/images/icons/chart.bar.xaxis.ascending.badge.clock.svg">
-         <span>قائمة عمليات الفحص</span>
-        </a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link" aria-current="page"
-         href="my-subscriptions.html">
-         <img src="assets/images/icons/crown.fill.svg">
-         <span>اشتراكاتي</span>
-        </a>
-       </li>
-      </ul>
-      <div
-       class="buttons d-flex justify-content-center align-items-center ms-lg-auto gap-3">
-       <a href="new-scan.html"
-        class="btn d-inline-flex justify-content-center gap-2">
-        <img
-         src="assets/images/icons/magnifying-glass-chart-solid.svg">
-        <span>فحص جديد</span>
-       </a>
-       <a href="#"
-        class="btn d-inline-flex justify-content-center gap-2">
-        <img src="assets/images/icons/plus.circle.fill.svg">
-        <span>أضف موقع</span></a>
-      </div>
-     </div>
-    </div>
-   </nav>
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer
+      src="//js-eu1.hs-scripts.com/143516126.js"></script>
+    <!-- End of HubSpot Embed Code -->
 
-  </header>
-  <!-- End header -->
-
-  <section class="subscriber-dashboard-page logged-in">
-   <div class="container">
-
-    <div class="table">
-     <div
-      class="table-header d-flex justify-content-between align-items-center">
-      <h2 class="table-header-title">قائمة عمليات الفحص</h2>
-      <button
-       class="btn btn-dark d-inline-flex align-items-center round-20 px-4">ابحث
-       الآن</button>
-     </div>
-     <div class="table-body">
-      <div class="overflow-auto">
-       <table class="w-100">
-        <thead>
-         <tr>
-          <th scope="col" class="text-center">#</th>
-          <th scope="col">الموقع</th>
-          <th scope="col">تاريخ الفحص</th>
-          <th scope="col">نسبة التوافق</th>
-          <th scope="col">مؤشر التحسين</th>
-          <th scope="col">الإجراءات</th>
-         </tr>
-        </thead>
-        <tbody>
-         <tr>
-          <td class="text-center">1</td>
-          <td>www.munner.sa</td>
-          <td>الأربعاء 2023/12/6 - 22:56</td>
-          <td class="fw-semibold">76%</td>
-          <td>
-           <div class="improvement-indicator up">
-            <span>13%</span>
-            <span>
-             <img src="assets/images/icons/arrow.up.right.svg"
-              width="12px" height="12px">
-            </span>
-           </div>
-          </td>
-          <td>
-           <div class="d-flex align-items-center gap-2">
-            <div class="btn-group download-report-btn-group">
-             <button
-              class="btn btn-primary px-3 py-2 download-report-btn rounded-4 rounded-end d-flex align-items-center justify-content-center gap-2"
-              type="button">
-              <span>
-               <img src="assets/images/icons/download.svg"
-                width="15px" height="15px">
-              </span>
-              <span>تحميل التقرير</span>
-             </button>
-             <button type="button"
-              class="btn btn-primary px-3 dropdown-toggle dropdown-toggle-split rounded-4 rounded-start"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="visually-hidden">Toggle
-               Dropdown</span>
-             </button>
-             <ul class="dropdown-menu">
-              <li><a class="dropdown-item"
-                href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another
-                action</a></li>
-              <li><a class="dropdown-item" href="#">Something
-                else
-                here</a></li>
-             </ul>
-            </div>
-            <button
-             class="btn btn-outline-semidark rounded-4 d-flex justify-content-center align-items-center gap-1"><img
-              src="assets/images/icons/eye-solid-black.svg"
-              width="16px"><span>معاينة</span>
-            </button>
-           </div>
-          </td>
-         </tr>
-         <tr>
-          <td class="text-center">2</td>
-          <td>dev.munner.sa</td>
-          <td>الاثنين 2023/11/27 - 18:21</td>
-          <td class="fw-semibold">63%</td>
-          <td>
-           <div class="improvement-indicator down">
-            <span>8%</span>
-            <span>
-             <img src="assets/images/icons/arrow.down.right.svg"
-              width="12px" height="12px">
-            </span>
-           </div>
-          </td>
-          <td>
-           <div class="d-flex align-items-center gap-2">
-            <div class="btn-group download-report-btn-group">
-             <button
-              class="btn btn-primary px-3 download-report-btn rounded-4 rounded-end d-flex align-items-center justify-content-center gap-2"
-              type="button">
-              <span>
-               <img src="assets/images/icons/download.svg"
-                width="15px" height="15px">
-              </span>
-              <span>تحميل التقرير</span>
-             </button>
-             <button type="button"
-              class="btn btn-primary px-3 py-2 dropdown-toggle dropdown-toggle-split rounded-4 rounded-start"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="visually-hidden">Toggle
-               Dropdown</span>
-             </button>
-             <ul class="dropdown-menu">
-              <li><a class="dropdown-item"
-                href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another
-                action</a></li>
-              <li><a class="dropdown-item" href="#">Something
-                else
-                here</a></li>
-             </ul>
-            </div>
-            <button
-             class="btn btn-outline-semidark rounded-4 d-flex justify-content-center align-items-center gap-1"><img
-              src="assets/images/icons/eye-solid-black.svg"
-              width="16px"><span>معاينة</span>
-            </button>
-           </div>
-          </td>
-         </tr>
-         <tr>
-          <td class="text-center">3</td>
-          <td>blog.munner.sa</td>
-          <td>السبت 2023/11/18 - 20:47</td>
-          <td class="fw-semibold">76%</td>
-          <td>
-           <div class="improvement-indicator up">
-            <span>43%</span>
-            <span>
-             <img src="assets/images/icons/arrow.up.right.svg"
-              width="12px" height="12px">
-            </span>
-           </div>
-          </td>
-          <td>
-           <div class="d-flex align-items-center gap-2">
-            <div class="btn-group download-report-btn-group">
-             <button
-              class="btn btn-primary px-3 download-report-btn rounded-4 rounded-end d-flex align-items-center justify-content-center gap-2"
-              type="button">
-              <span>
-               <img src="assets/images/icons/download.svg"
-                width="15px" height="15px">
-              </span>
-              <span>تحميل التقرير</span>
-             </button>
-             <button type="button"
-              class="btn btn-primary px-3 py-2 dropdown-toggle dropdown-toggle-split rounded-4 rounded-start"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="visually-hidden">Toggle
-               Dropdown</span>
-             </button>
-             <ul class="dropdown-menu">
-              <li><a class="dropdown-item"
-                href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another
-                action</a></li>
-              <li><a class="dropdown-item" href="#">Something
-                else
-                here</a></li>
-             </ul>
-            </div>
-            <button
-             class="btn btn-outline-semidark rounded-4 d-flex justify-content-center align-items-center gap-1"><img
-              src="assets/images/icons/eye-solid-black.svg"
-              width="16px"><span>معاينة</span>
-            </button>
-           </div>
-          </td>
-         </tr>
-         <tr>
-          <td class="text-center">1</td>
-          <td>www.munner.sa</td>
-          <td>الأربعاء 2023/12/6 - 22:56</td>
-          <td class="fw-semibold">76%</td>
-          <td>
-           <div class="improvement-indicator up">
-            <span>13%</span>
-            <span>
-             <img src="assets/images/icons/arrow.up.right.svg"
-              width="12px" height="12px">
-            </span>
-           </div>
-          </td>
-          <td>
-           <div class="d-flex align-items-center gap-2">
-            <div class="btn-group download-report-btn-group">
-             <button
-              class="btn btn-primary px-3 py-2 download-report-btn rounded-4 rounded-end d-flex align-items-center justify-content-center gap-2"
-              type="button">
-              <span>
-               <img src="assets/images/icons/download.svg"
-                width="15px" height="15px">
-              </span>
-              <span>تحميل التقرير</span>
-             </button>
-             <button type="button"
-              class="btn btn-primary px-3 dropdown-toggle dropdown-toggle-split rounded-4 rounded-start"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="visually-hidden">Toggle
-               Dropdown</span>
-             </button>
-             <ul class="dropdown-menu">
-              <li><a class="dropdown-item"
-                href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another
-                action</a></li>
-              <li><a class="dropdown-item" href="#">Something
-                else
-                here</a></li>
-             </ul>
-            </div>
-            <button
-             class="btn btn-outline-semidark rounded-4 d-flex justify-content-center align-items-center gap-1"><img
-              src="assets/images/icons/eye-solid-black.svg"
-              width="16px"><span>معاينة</span>
-            </button>
-           </div>
-          </td>
-         </tr>
-         <tr>
-          <td class="text-center">2</td>
-          <td>dev.munner.sa</td>
-          <td>الاثنين 2023/11/27 - 18:21</td>
-          <td class="fw-semibold">63%</td>
-          <td>
-           <div class="improvement-indicator down">
-            <span>8%</span>
-            <span>
-             <img src="assets/images/icons/arrow.down.right.svg"
-              width="12px" height="12px">
-            </span>
-           </div>
-          </td>
-          <td>
-           <div class="d-flex align-items-center gap-2">
-            <div class="btn-group download-report-btn-group">
-             <button
-              class="btn btn-primary px-3 download-report-btn rounded-4 rounded-end d-flex align-items-center justify-content-center gap-2"
-              type="button">
-              <span>
-               <img src="assets/images/icons/download.svg"
-                width="15px" height="15px">
-              </span>
-              <span>تحميل التقرير</span>
-             </button>
-             <button type="button"
-              class="btn btn-primary px-3 py-2 dropdown-toggle dropdown-toggle-split rounded-4 rounded-start"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="visually-hidden">Toggle
-               Dropdown</span>
-             </button>
-             <ul class="dropdown-menu">
-              <li><a class="dropdown-item"
-                href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another
-                action</a></li>
-              <li><a class="dropdown-item" href="#">Something
-                else
-                here</a></li>
-             </ul>
-            </div>
-            <button
-             class="btn btn-outline-semidark rounded-4 d-flex justify-content-center align-items-center gap-1"><img
-              src="assets/images/icons/eye-solid-black.svg"
-              width="16px"><span>معاينة</span>
-            </button>
-           </div>
-          </td>
-         </tr>
-         <tr>
-          <td class="text-center">3</td>
-          <td>blog.munner.sa</td>
-          <td>السبت 2023/11/18 - 20:47</td>
-          <td class="fw-semibold">76%</td>
-          <td>
-           <div class="improvement-indicator up">
-            <span>43%</span>
-            <span>
-             <img src="assets/images/icons/arrow.up.right.svg"
-              width="12px" height="12px">
-            </span>
-           </div>
-          </td>
-          <td>
-           <div class="d-flex align-items-center gap-2">
-            <div class="btn-group download-report-btn-group">
-             <button
-              class="btn btn-primary px-3 download-report-btn rounded-4 rounded-end d-flex align-items-center justify-content-center gap-2"
-              type="button">
-              <span>
-               <img src="assets/images/icons/download.svg"
-                width="15px" height="15px">
-              </span>
-              <span>تحميل التقرير</span>
-             </button>
-             <button type="button"
-              class="btn btn-primary px-3 py-2 dropdown-toggle dropdown-toggle-split rounded-4 rounded-start"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="visually-hidden">Toggle
-               Dropdown</span>
-             </button>
-             <ul class="dropdown-menu">
-              <li><a class="dropdown-item"
-                href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another
-                action</a></li>
-              <li><a class="dropdown-item" href="#">Something
-                else
-                here</a></li>
-             </ul>
-            </div>
-            <button
-             class="btn btn-outline-semidark rounded-4 d-flex justify-content-center align-items-center gap-1"><img
-              src="assets/images/icons/eye-solid-black.svg"
-              width="16px"><span>معاينة</span>
-            </button>
-           </div>
-          </td>
-         </tr>
-         <tr>
-          <td class="text-center">1</td>
-          <td>www.munner.sa</td>
-          <td>الأربعاء 2023/12/6 - 22:56</td>
-          <td class="fw-semibold">76%</td>
-          <td>
-           <div class="improvement-indicator up">
-            <span>13%</span>
-            <span>
-             <img src="assets/images/icons/arrow.up.right.svg"
-              width="12px" height="12px">
-            </span>
-           </div>
-          </td>
-          <td>
-           <div class="d-flex align-items-center gap-2">
-            <div class="btn-group download-report-btn-group">
-             <button
-              class="btn btn-primary px-3 py-2 download-report-btn rounded-4 rounded-end d-flex align-items-center justify-content-center gap-2"
-              type="button">
-              <span>
-               <img src="assets/images/icons/download.svg"
-                width="15px" height="15px">
-              </span>
-              <span>تحميل التقرير</span>
-             </button>
-             <button type="button"
-              class="btn btn-primary px-3 dropdown-toggle dropdown-toggle-split rounded-4 rounded-start"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="visually-hidden">Toggle
-               Dropdown</span>
-             </button>
-             <ul class="dropdown-menu">
-              <li><a class="dropdown-item"
-                href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another
-                action</a></li>
-              <li><a class="dropdown-item" href="#">Something
-                else
-                here</a></li>
-             </ul>
-            </div>
-            <button
-             class="btn btn-outline-semidark rounded-4 d-flex justify-content-center align-items-center gap-1"><img
-              src="assets/images/icons/eye-solid-black.svg"
-              width="16px"><span>معاينة</span>
-            </button>
-           </div>
-          </td>
-         </tr>
-         <tr>
-          <td class="text-center">2</td>
-          <td>dev.munner.sa</td>
-          <td>الاثنين 2023/11/27 - 18:21</td>
-          <td class="fw-semibold">63%</td>
-          <td>
-           <div class="improvement-indicator down">
-            <span>8%</span>
-            <span>
-             <img src="assets/images/icons/arrow.down.right.svg"
-              width="12px" height="12px">
-            </span>
-           </div>
-          </td>
-          <td>
-           <div class="d-flex align-items-center gap-2">
-            <div class="btn-group download-report-btn-group">
-             <button
-              class="btn btn-primary px-3 download-report-btn rounded-4 rounded-end d-flex align-items-center justify-content-center gap-2"
-              type="button">
-              <span>
-               <img src="assets/images/icons/download.svg"
-                width="15px" height="15px">
-              </span>
-              <span>تحميل التقرير</span>
-             </button>
-             <button type="button"
-              class="btn btn-primary px-3 py-2 dropdown-toggle dropdown-toggle-split rounded-4 rounded-start"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="visually-hidden">Toggle
-               Dropdown</span>
-             </button>
-             <ul class="dropdown-menu">
-              <li><a class="dropdown-item"
-                href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another
-                action</a></li>
-              <li><a class="dropdown-item" href="#">Something
-                else
-                here</a></li>
-             </ul>
-            </div>
-            <button
-             class="btn btn-outline-semidark rounded-4 d-flex justify-content-center align-items-center gap-1"><img
-              src="assets/images/icons/eye-solid-black.svg"
-              width="16px"><span>معاينة</span>
-            </button>
-           </div>
-          </td>
-         </tr>
-         <tr>
-          <td class="text-center">3</td>
-          <td>blog.munner.sa</td>
-          <td>السبت 2023/11/18 - 20:47</td>
-          <td class="fw-semibold">76%</td>
-          <td>
-           <div class="improvement-indicator up">
-            <span>43%</span>
-            <span>
-             <img src="assets/images/icons/arrow.up.right.svg"
-              width="12px" height="12px">
-            </span>
-           </div>
-          </td>
-          <td>
-           <div class="d-flex align-items-center gap-2">
-            <div class="btn-group download-report-btn-group">
-             <button
-              class="btn btn-primary px-3 download-report-btn rounded-4 rounded-end d-flex align-items-center justify-content-center gap-2"
-              type="button">
-              <span>
-               <img src="assets/images/icons/download.svg"
-                width="15px" height="15px">
-              </span>
-              <span>تحميل التقرير</span>
-             </button>
-             <button type="button"
-              class="btn btn-primary px-3 py-2 dropdown-toggle dropdown-toggle-split rounded-4 rounded-start"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="visually-hidden">Toggle
-               Dropdown</span>
-             </button>
-             <ul class="dropdown-menu">
-              <li><a class="dropdown-item"
-                href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another
-                action</a></li>
-              <li><a class="dropdown-item" href="#">Something
-                else
-                here</a></li>
-             </ul>
-            </div>
-            <button
-             class="btn btn-outline-semidark rounded-4 d-flex justify-content-center align-items-center gap-1"><img
-              src="assets/images/icons/eye-solid-black.svg"
-              width="16px"><span>معاينة</span>
-            </button>
-           </div>
-          </td>
-         </tr>
-        </tbody>
-       </table>
-      </div>
-     </div>
-    </div>
-   </div>
-  </section>
-
-  <footer>
-   <div class="copyrights">
-    <div class="container">
-     <div class="row text-center text-md-start">
-      <div class="col-md-6">
-       <p class="m-0">© جميع الحقوق محفوظة لمنير 2023</p>
-      </div>
-      <div class="col-md-6">
-       <div class="polices  text-md-end">
-        <a href>الشروط والأحكام</a>
-        <a href>سياسة الخصوصية</a>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
-  </footer>
-
-  <script src="assets/js/jquery-3.5.1.min.js"></script>
-  <script src="assets/js/swiper-bundle.min.js"></script>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/wow.min.js "></script>
-  <script src="assets/js/script.js "></script>
-
-  <!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer
-   src="//js-eu1.hs-scripts.com/143516126.js"></script>
-  <!-- End of HubSpot Embed Code -->
-
- </body>
+  </body>
 
 </html>

@@ -1,0 +1,63 @@
+.profile-page {
+  .profile {
+    border-radius: 16px;
+    max-width: 776px;
+    width: 100%;
+    .profile-header {
+      padding: 34px 32px 0px 32px;
+      .profile-top-image {
+        height: 158px;
+        overflow: hidden;
+        border-radius: 16px;
+      }
+      .profile-image-wrapper {
+        background: #eff2f9;
+        width: 144px;
+        height: 144px;
+        padding: 10px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: auto;
+        transform: translateY(-50%);
+        .profile-image {
+          position: relative;
+          border-radius: 50%;
+          &::after {
+            content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyMy45OTkiIHZpZXdCb3g9IjAgMCAyNCAyMy45OTkiPgogIDxnIGlkPSJjYW1lcmEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMy4yMTYpIj4KICAgIDxyZWN0IGlkPSJSZWN0YW5nbGVfNzg2NCIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgNzg2NCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjIzLjk5OSIKICAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtMy4yMTYpIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwIiAvPgogICAgPHBhdGggaWQ9IlBhdGhfMjczMyIgZGF0YS1uYW1lPSJQYXRoIDI3MzMiCiAgICAgIGQ9Ik0zLjA2OCwxOC42MzVIMjAuOTMyYzIuMDMzLDAsMy4wNjgtMS4wMTYsMy4wNjgtMy4wMjlWNS4zNzVjMC0yLjAxMy0xLjAzNi0zLjAyLTMuMDY4LTMuMDJIMTguMTM3YTEuNTQzLDEuNTQzLDAsMCwxLTEuNDQ2LS42NDVMMTUuOTA5LjgzMUEyLjM0OSwyLjM0OSwwLDAsMCwxMy45MTUsMGgtMy45QTIuMzQ5LDIuMzQ5LDAsMCwwLDguMDIzLjgzMWwtLjc4Mi44NzlhMS41NzQsMS41NzQsMCwwLDEtMS40NDYuNjQ1SDMuMDY4UTAsMi4zNTUsMCw1LjM3NVYxNS42MDZDMCwxNy42MTksMS4wMjYsMTguNjM1LDMuMDY4LDE4LjYzNVptLjAyLTEuNTczYTEuMzcyLDEuMzcyLDAsMCwxLTEuNTE1LTEuNTM0VjUuNDYzQTEuMzcyLDEuMzcyLDAsMCwxLDMuMDg4LDMuOTI4aDMuMWEyLjEyMSwyLjEyMSwwLDAsMCwxLjg0Ny0uNzEzbC43NjItLjg2YTEuODI2LDEuODI2LDAsMCwxLDEuNzEtLjc4MmgyLjkyMmExLjgyNiwxLjgyNiwwLDAsMSwxLjcxLjc4MmwuNzYyLjg2YTIuMTIxLDIuMTIxLDAsMCwwLDEuODQ3LjcxM0gyMC45YTEuMzc1LDEuMzc1LDAsMCwxLDEuNTI0LDEuNTM0VjE1LjUyOEExLjM3NCwxLjM3NCwwLDAsMSwyMC45LDE3LjA2MlpNMTIsMTUuNjU1YTUuMzQsNS4zNCwwLDEsMC01LjMzNS01LjM0NUE1LjMxMSw1LjMxMSwwLDAsMCwxMiwxNS42NTVabTAtMS40ODVhMy44NiwzLjg2LDAsMSwxLDMuODUtMy44NkEzLjg1NiwzLjg1NiwwLDAsMSwxMiwxNC4xNjlabTUuNzI2LTcuNDU2QTEuMjIyLDEuMjIyLDAsMSwwLDE4Ljk1OCw1LjUsMS4yNDgsMS4yNDgsMCwwLDAsMTcuNzI2LDYuNzEzWiIKICAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtMC41MzQpIiBmaWxsPSIjZmZmZmZmIiAvPgogIDwvZz4KPC9zdmc+");
+            background: #1f1f1f;
+            opacity: 0.6;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 999999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+    .profile-body {
+      padding: 32px;
+      margin-top: -32px;
+      border-top: 1px solid #d1dbf0;
+    }
+    .profile-footer {
+      padding: 0 32px 32px 32px;
+      a {
+        &:hover {
+          color: $color-2;
+          svg {
+            path,
+            rect {
+              fill: $color-2;
+            }
+          }
+        }
+      }
+    }
+  }
+}

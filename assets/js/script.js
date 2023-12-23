@@ -109,10 +109,61 @@ if (go_to_top) {
 
 (function ($) {
   /**
+   * Add new domain
+   *
+   */
+  const addNewDomainBtn = document.getElementById("add-new-domain");
+  addNewDomainBtn.addEventListener("click", function () {
+    let clone = document.querySelector(".add-domain-row").cloneNode(true);
+    clone.querySelector(".form-control").value = "";
+    addNewDomainBtn.before(clone);
+  });
+
+  let trashBtnsDomainBtn = document.querySelectorAll(
+    ".add-domain-row .btn-trash"
+  );
+  for (let index = 0; index < trashBtnsDomainBtn.length; index++) {
+    const element = trashBtnsDomainBtn[index];
+    element.addEventListener("click", function () {
+      element.closest(".add-domain-row").remove();
+    });
+  }
+
+  /**
+   * Add voice command
+   *
+   */
+  const addVoiceCommandBtn = document.getElementById("add-voice-command");
+  addVoiceCommandBtn.addEventListener("click", function () {
+    let clone = document
+      .querySelector(".add-voice-command-row")
+      .cloneNode(true);
+    clone.querySelector(".form-control").value = "";
+    addVoiceCommandBtn.parentElement.before(clone);
+  });
+
+  let trashBtnsVoiceCommand = document.querySelectorAll(
+    ".add-voice-command-row .btn-trash"
+  );
+  for (let index = 0; index < trashBtnsVoiceCommand.length; index++) {
+    const element = trashBtnsVoiceCommand[index];
+    element.addEventListener("click", function () {
+      element.closest(".add-voice-command-row").remove();
+    });
+  }
+  /**
    * Slider Scroll
    */
   // Get all sections that have an ID defined
-  const sections = document.querySelectorAll(".subscriptions-list-table");
+  const sidebarNav = document.querySelectorAll(".sidebar-nav");
+  const sidebarNavLinks = document.querySelectorAll(".sidebar-nav .nav-link");
+  let sections = [];
+  for (let index = 0; index < sidebarNavLinks.length; index++) {
+    const element = sidebarNavLinks[index];
+    sections.push(
+      document.getElementById(element.getAttribute("href").slice(1))
+    );
+  }
 
   // Add an event listener listening for scroll
   window.addEventListener("scroll", navHighlighter);
@@ -126,16 +177,13 @@ if (go_to_top) {
       const sectionHeight = current.offsetHeight;
       const sectionTop = current.offsetTop - 250;
       sectionId = current.getAttribute("id");
-      console.log("test");
-      console.log(scrollY);
-      console.log(sectionTop);
       if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
         document
-          .querySelector(".subscriptions-list-nav a[href*=" + sectionId + "]")
+          .querySelector(".sidebar-nav a[href*=" + sectionId + "]")
           .classList.add("active");
       } else {
         document
-          .querySelector(".subscriptions-list-nav a[href*=" + sectionId + "]")
+          .querySelector(".sidebar-nav a[href*=" + sectionId + "]")
           .classList.remove("active");
       }
     });
